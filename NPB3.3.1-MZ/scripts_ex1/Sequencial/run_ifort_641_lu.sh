@@ -11,118 +11,118 @@ set -x
 
 
 cp config/makeo0.def_ifort config/make.def
-make sp-mz CLASS=W
-make sp-mz CLASS=A
-make sp-mz CLASS=B
-make sp-mz CLASS=C
+make lu-mz CLASS=W
+make lu-mz CLASS=A
+make lu-mz CLASS=B
+make lu-mz CLASS=C
 echo 'O0'
 echo '------------Class W------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.W.x
+    time bin/lu-mz.W.x
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.A.x
+    time bin/lu-mz.A.x
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.B.x
+    time bin/lu-mz.B.x
 done
 echo '------------Class C------------'
 
 
-time bin/sp-mz.C.x
+time bin/lu-mz.C.x
 
 
 cp config/makeo1.def_ifort config/make.def
-make sp-mz CLASS=W
-make sp-mz CLASS=A
-make sp-mz CLASS=B
-make sp-mz CLASS=C
+make lu-mz CLASS=W
+make lu-mz CLASS=A
+make lu-mz CLASS=B
+make lu-mz CLASS=C
 echo 'O1'
 echo '------------Class W------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.W.x
+    time bin/lu-mz.W.x
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.A.x
+    time bin/lu-mz.A.x
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.B.x
+    time bin/lu-mz.B.x
 done
 echo '------------Class C------------'
 
 
-time bin/sp-mz.C.x
+time bin/lu-mz.C.x
 
 
 cp config/makeo2.def_ifort config/make.def
-make sp-mz CLASS=W
-make sp-mz CLASS=A
-make sp-mz CLASS=B
-make sp-mz CLASS=C
-echo 'O1'
+make lu-mz CLASS=W
+make lu-mz CLASS=A
+make lu-mz CLASS=B
+make lu-mz CLASS=C
+echo 'O2'
 echo '------------Class W------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.W.x
+    time bin/lu-mz.W.x
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.A.x
+    time bin/lu-mz.A.x
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.B.x
+    time bin/lu-mz.B.x
 done
 echo '------------Class C------------'
 
-time bin/sp-mz.C.x
+time bin/lu-mz.C.x
 
 
 cp config/makeo3.def_ifort config/make.def
-make sp-mz CLASS=W
-make sp-mz CLASS=A
-make sp-mz CLASS=B
-make sp-mz CLASS=C
-echo 'O1'
+make lu-mz CLASS=W
+make lu-mz CLASS=A
+make lu-mz CLASS=B
+make lu-mz CLASS=C
+echo 'O3'
 echo '------------Class W------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.W.x
+    time bin/lu-mz.W.x
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.A.x
+    time bin/lu-mz.A.x
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
-    time bin/sp-mz.B.x
+    time bin/lu-mz.B.x
 done
 echo '------------Class C------------'
 
-time bin/sp-mz.C.x
+time bin/lu-mz.C.x

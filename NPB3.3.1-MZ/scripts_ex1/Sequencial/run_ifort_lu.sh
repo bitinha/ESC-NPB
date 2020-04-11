@@ -2,7 +2,7 @@
 #
 #PBS -N SERIAL-MZ
 #PBS -l walltime=10:00:00
-#PBS -l nodes=1:r641:ppn=32
+#PBS -l nodes=1:r662:ppn=48
 #PBS -j oe 
 cd ESC/TP1/NPB3.3-MZ-SER
 
@@ -75,7 +75,7 @@ make lu-mz CLASS=W
 make lu-mz CLASS=A
 make lu-mz CLASS=B
 make lu-mz CLASS=C
-echo 'O1'
+echo 'O2'
 echo '------------Class W------------'
 
 for i in {1..10}
@@ -104,7 +104,7 @@ make lu-mz CLASS=W
 make lu-mz CLASS=A
 make lu-mz CLASS=B
 make lu-mz CLASS=C
-echo 'O1'
+echo 'O3'
 echo '------------Class W------------'
 
 for i in {1..10}
