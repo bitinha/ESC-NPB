@@ -75,7 +75,7 @@ make sp-mz CLASS=W
 make sp-mz CLASS=A
 make sp-mz CLASS=B
 make sp-mz CLASS=C
-echo 'O1'
+echo 'O2'
 echo '------------Class W------------'
 
 for i in {1..10}
@@ -104,7 +104,7 @@ make sp-mz CLASS=W
 make sp-mz CLASS=A
 make sp-mz CLASS=B
 make sp-mz CLASS=C
-echo 'O1'
+echo 'O3'
 echo '------------Class W------------'
 
 for i in {1..10}

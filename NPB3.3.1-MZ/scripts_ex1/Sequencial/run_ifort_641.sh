@@ -75,7 +75,7 @@ make bt-mz CLASS=W
 make bt-mz CLASS=A
 make bt-mz CLASS=B
 make bt-mz CLASS=C
-echo 'O1'
+echo 'O2'
 echo '------------Class W------------'
 
 for i in {1..10}
@@ -104,7 +104,7 @@ make bt-mz CLASS=W
 make bt-mz CLASS=A
 make bt-mz CLASS=B
 make bt-mz CLASS=C
-echo 'O1'
+echo 'O3'
 echo '------------Class W------------'
 
 for i in {1..10}
