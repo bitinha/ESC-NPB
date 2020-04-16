@@ -1,0 +1,553 @@
++ export OMP_NUM_THREADS=2
++ OMP_NUM_THREADS=2
++ cp config/makeo0.def config/make.def
++ make bt-mz CLASS=W NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 W
+setparams: Maximum number of processors for benchmark bt-mz, class W is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 A
+setparams: Maximum number of processors for benchmark bt-mz, class A is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O0 -fopenmp bt.f
+mpif77 -c  -O0 -fopenmp initialize.f
+mpif77 -c  -O0 -fopenmp exact_solution.f
+mpif77 -c  -O0 -fopenmp exact_rhs.f
+mpif77 -c  -O0 -fopenmp set_constants.f
+mpif77 -c  -O0 -fopenmp adi.f
+mpif77 -c  -O0 -fopenmp rhs.f
+mpif77 -c  -O0 -fopenmp zone_setup.f
+mpif77 -c  -O0 -fopenmp x_solve.f
+mpif77 -c  -O0 -fopenmp y_solve.f
+mpif77 -c  -O0 -fopenmp exch_qbc.f
+mpif77 -c  -O0 -fopenmp solve_subs.f
+mpif77 -c  -O0 -fopenmp z_solve.f
+mpif77 -c  -O0 -fopenmp add.f
+mpif77 -c  -O0 -fopenmp error.f
+mpif77 -c  -O0 -fopenmp verify.f
+mpif77 -c  -O0 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O0 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O0 -fopenmp timers.f
+mpif77 -O0 -fopenmp -o ../bin/bt-mz.B.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ make bt-mz CLASS=C NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 C
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O0 -fopenmp bt.f
+mpif77 -c  -O0 -fopenmp initialize.f
+mpif77 -c  -O0 -fopenmp exact_solution.f
+mpif77 -c  -O0 -fopenmp exact_rhs.f
+mpif77 -c  -O0 -fopenmp set_constants.f
+mpif77 -c  -O0 -fopenmp adi.f
+mpif77 -c  -O0 -fopenmp rhs.f
+mpif77 -c  -O0 -fopenmp zone_setup.f
+mpif77 -c  -O0 -fopenmp x_solve.f
+mpif77 -c  -O0 -fopenmp y_solve.f
+mpif77 -c  -O0 -fopenmp exch_qbc.f
+mpif77 -c  -O0 -fopenmp solve_subs.f
+mpif77 -c  -O0 -fopenmp z_solve.f
+mpif77 -c  -O0 -fopenmp add.f
+mpif77 -c  -O0 -fopenmp error.f
+mpif77 -c  -O0 -fopenmp verify.f
+mpif77 -c  -O0 -fopenmp mpi_setup.f
+mpif77 -O0 -fopenmp -o ../bin/bt-mz.C.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ echo O0
+O0
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.443s
+user	0m0.030s
+sys	0m0.065s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.319s
+user	0m0.031s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.209s
+user	0m0.030s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.211s
+user	0m0.026s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.209s
+user	0m0.031s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.205s
+user	0m0.036s
+sys	0m0.041s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.215s
+user	0m0.035s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.211s
+user	0m0.034s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.204s
+user	0m0.038s
+sys	0m0.039s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.W.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.W.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.197s
+user	0m0.033s
+sys	0m0.033s
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.203s
+user	0m0.028s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.208s
+user	0m0.029s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.209s
+user	0m0.033s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.202s
+user	0m0.031s
+sys	0m0.043s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.198s
+user	0m0.024s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.202s
+user	0m0.035s
+sys	0m0.041s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.212s
+user	0m0.039s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.208s
+user	0m0.036s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.219s
+user	0m0.029s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.A.64
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: bin/bt-mz.A.64
+Node: compute-641-16
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+48 total processes failed to start
+
+real	0m0.206s
+user	0m0.033s
+sys	0m0.044s
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.B.64
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28435] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28439] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28436] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28437] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28440] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28444] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28445] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28448] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28450] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28454] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28438] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28441] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28442] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28443] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28452] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[compute-641-16.local:28456] Local abort before MPI_INIT completed successfully; not able to aggregate error messages, and not able to guarantee that all other processes were killed!
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+Open MPI stopped checking at the first component that it did not find.
+
+Host:      compute-641-16.local
+Framework: btl
+Component: gm
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  mca_bml_base_open() failed
+  --> Returned "Not found" (-13) instead of "Success" (0)
+--------------------------------------------------------------------------
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+[compute-641-16.local:28433] 15 more processes have sent help message help-mca-base.txt / find-available:not-valid
+[compute-641-16.local:28433] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[compute-641-16.local:28433] 14 more processes have sent help message help-mpi-runtime / mpi_init:startup:internal-failure
+
+real	0m0.551s
+user	0m0.368s
+sys	0m0.342s
++ for i in '{1..10}'
++ mpirun -np 64 --map-by ppr:1:core -mca btl self,sm,gm bin/bt-mz.B.64
+=>> PBS: job killed: node 3 (compute-641-11) requested job terminate, 'EOF' (code 1099) - received SISTER_EOF attempting to communicate with sister MOM's

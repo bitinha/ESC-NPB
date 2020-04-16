@@ -1,0 +1,43 @@
+#!/usr/bin/env python3.8
+
+import re
+import fileinput
+
+resultados = dict()
+state=""
+for line in fileinput.input():
+	
+	if state == "bin":
+		if match := re.search(r'\s*Class\s*=\s*(.*)',line):
+			Class = match.group(1)
+		elif match := re.search(r'\s*Time in seconds\s*=\s*(.*)',line):
+			time = float(match.group(1))
+		elif match := re.search(r'\s*Mop/s total\s*=\s*(.*)',line):
+			mops = match.group(1)
+		elif match := re.search(r'\s*F77\s*=\s*(.*)',line):
+			f77 = match.group(1)
+		elif match := re.search(r'\s*FFLAGS\s*=\s*(.*)',line):
+			fflags = match.group(1)
+		elif re.match(r'sys',line):
+			d = {"Class":Class,"Time":time,"MOPS":mops,"F77":f77,"FFlags":fflags}
+			l = resultados.get(Class+f77+fflags,list())
+			l.append(d)
+			resultados[Class+f77+fflags]=l
+			state = ""
+
+	elif re.match(r'\+ bin',line):
+		state = "bin"
+
+
+
+for lista in resultados.values():
+	minimo = float('inf')
+	for e in lista:
+		if e["Time"] < minimo:
+			minimo = e["Time"]
+			Class = e["Class"]
+			time = e["Time"]
+			mops = e["MOPS"]
+			f77 = e["F77"]
+			fflags = e["FFlags"]
+	print("Class: "+Class+"; Time: "+str(time)+"; MOP/S: "+mops+"; F77: "+f77+"; FFlags: "+fflags)

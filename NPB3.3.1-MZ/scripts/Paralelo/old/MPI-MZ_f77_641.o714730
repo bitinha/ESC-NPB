@@ -1,0 +1,4178 @@
++ export OMP_NUM_THREADS=2
++ OMP_NUM_THREADS=2
++ cp config/makeo0.def config/make.def
++ make bt-mz CLASS=W NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 W
+setparams: Maximum number of processors for benchmark bt-mz, class W is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 A
+setparams: Maximum number of processors for benchmark bt-mz, class A is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O0 -fopenmp bt.f
+mpif77 -c  -O0 -fopenmp initialize.f
+mpif77 -c  -O0 -fopenmp exact_solution.f
+mpif77 -c  -O0 -fopenmp exact_rhs.f
+mpif77 -c  -O0 -fopenmp set_constants.f
+mpif77 -c  -O0 -fopenmp adi.f
+mpif77 -c  -O0 -fopenmp rhs.f
+mpif77 -c  -O0 -fopenmp zone_setup.f
+mpif77 -c  -O0 -fopenmp x_solve.f
+mpif77 -c  -O0 -fopenmp y_solve.f
+mpif77 -c  -O0 -fopenmp exch_qbc.f
+mpif77 -c  -O0 -fopenmp solve_subs.f
+mpif77 -c  -O0 -fopenmp z_solve.f
+mpif77 -c  -O0 -fopenmp add.f
+mpif77 -c  -O0 -fopenmp error.f
+mpif77 -c  -O0 -fopenmp verify.f
+mpif77 -c  -O0 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O0 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O0 -fopenmp timers.f
+mpif77 -O0 -fopenmp -o ../bin/bt-mz.B.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ make bt-mz CLASS=C NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 C
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O0 -fopenmp bt.f
+mpif77 -c  -O0 -fopenmp initialize.f
+mpif77 -c  -O0 -fopenmp exact_solution.f
+mpif77 -c  -O0 -fopenmp exact_rhs.f
+mpif77 -c  -O0 -fopenmp set_constants.f
+mpif77 -c  -O0 -fopenmp adi.f
+mpif77 -c  -O0 -fopenmp rhs.f
+mpif77 -c  -O0 -fopenmp zone_setup.f
+mpif77 -c  -O0 -fopenmp x_solve.f
+mpif77 -c  -O0 -fopenmp y_solve.f
+mpif77 -c  -O0 -fopenmp exch_qbc.f
+mpif77 -c  -O0 -fopenmp solve_subs.f
+mpif77 -c  -O0 -fopenmp z_solve.f
+mpif77 -c  -O0 -fopenmp add.f
+mpif77 -c  -O0 -fopenmp error.f
+mpif77 -c  -O0 -fopenmp verify.f
+mpif77 -c  -O0 -fopenmp mpi_setup.f
+mpif77 -O0 -fopenmp -o ../bin/bt-mz.C.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ echo O0
+O0
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.650s
+user	0m0.040s
+sys	0m0.060s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.256s
+user	0m0.028s
+sys	0m0.059s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.249s
+user	0m0.022s
+sys	0m0.055s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.026s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.032s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.029s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.032s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.038s
+sys	0m0.037s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.032s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.022s
+sys	0m0.046s
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.025s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.237s
+user	0m0.029s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.024s
+sys	0m0.054s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.024s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.025s
+sys	0m0.053s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.022s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.251s
+user	0m0.029s
+sys	0m0.055s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.026s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.233s
+user	0m0.027s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.242s
+user	0m0.022s
+sys	0m0.053s
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.256s
+user	0m0.034s
+sys	0m0.039s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.324s
+user	0m0.025s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.025s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.030s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.257s
+user	0m0.022s
+sys	0m0.054s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.243s
+user	0m0.037s
+sys	0m0.040s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.019s
+sys	0m0.056s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.237s
+user	0m0.024s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.031s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.016s
+sys	0m0.058s
++ echo '------------Class C------------'
+------------Class C------------
++ mpirun -np 64 bin/bt-mz.C.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.027s
+sys	0m0.047s
++ cp config/makeo1.def config/make.def
++ make bt-mz CLASS=W NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 W
+setparams: Maximum number of processors for benchmark bt-mz, class W is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 A
+setparams: Maximum number of processors for benchmark bt-mz, class A is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O1 -fopenmp bt.f
+mpif77 -c  -O1 -fopenmp initialize.f
+mpif77 -c  -O1 -fopenmp exact_solution.f
+mpif77 -c  -O1 -fopenmp exact_rhs.f
+mpif77 -c  -O1 -fopenmp set_constants.f
+mpif77 -c  -O1 -fopenmp adi.f
+mpif77 -c  -O1 -fopenmp rhs.f
+mpif77 -c  -O1 -fopenmp zone_setup.f
+mpif77 -c  -O1 -fopenmp x_solve.f
+mpif77 -c  -O1 -fopenmp y_solve.f
+mpif77 -c  -O1 -fopenmp exch_qbc.f
+mpif77 -c  -O1 -fopenmp solve_subs.f
+mpif77 -c  -O1 -fopenmp z_solve.f
+mpif77 -c  -O1 -fopenmp add.f
+mpif77 -c  -O1 -fopenmp error.f
+mpif77 -c  -O1 -fopenmp verify.f
+mpif77 -c  -O1 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O1 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O1 -fopenmp timers.f
+mpif77 -O1 -fopenmp -o ../bin/bt-mz.B.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ make bt-mz CLASS=C NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 C
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O1 -fopenmp bt.f
+mpif77 -c  -O1 -fopenmp initialize.f
+mpif77 -c  -O1 -fopenmp exact_solution.f
+mpif77 -c  -O1 -fopenmp exact_rhs.f
+mpif77 -c  -O1 -fopenmp set_constants.f
+mpif77 -c  -O1 -fopenmp adi.f
+mpif77 -c  -O1 -fopenmp rhs.f
+mpif77 -c  -O1 -fopenmp zone_setup.f
+mpif77 -c  -O1 -fopenmp x_solve.f
+mpif77 -c  -O1 -fopenmp y_solve.f
+mpif77 -c  -O1 -fopenmp exch_qbc.f
+mpif77 -c  -O1 -fopenmp solve_subs.f
+mpif77 -c  -O1 -fopenmp z_solve.f
+mpif77 -c  -O1 -fopenmp add.f
+mpif77 -c  -O1 -fopenmp error.f
+mpif77 -c  -O1 -fopenmp verify.f
+mpif77 -c  -O1 -fopenmp mpi_setup.f
+mpif77 -O1 -fopenmp -o ../bin/bt-mz.C.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ echo O1
+O1
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.251s
+user	0m0.031s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.242s
+user	0m0.027s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.406s
+user	0m0.028s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.027s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.236s
+user	0m0.026s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.026s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.029s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.032s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.024s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.028s
+sys	0m0.047s
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.034s
+sys	0m0.041s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.246s
+user	0m0.030s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.260s
+user	0m0.032s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.027s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.231s
+user	0m0.023s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.243s
+user	0m0.031s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.242s
+user	0m0.031s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.029s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.236s
+user	0m0.028s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.035s
+sys	0m0.043s
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.028s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.261s
+user	0m0.032s
+sys	0m0.043s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.403s
+user	0m0.034s
+sys	0m0.041s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.027s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.032s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.243s
+user	0m0.033s
+sys	0m0.043s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.030s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.024s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.231s
+user	0m0.030s
+sys	0m0.037s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.028s
+sys	0m0.046s
++ echo '------------Class C------------'
+------------Class C------------
++ mpirun -np 64 bin/bt-mz.C.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.031s
+sys	0m0.047s
++ cp config/makeo2.def config/make.def
++ make bt-mz CLASS=W NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 W
+setparams: Maximum number of processors for benchmark bt-mz, class W is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 A
+setparams: Maximum number of processors for benchmark bt-mz, class A is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O2 -fopenmp bt.f
+mpif77 -c  -O2 -fopenmp initialize.f
+mpif77 -c  -O2 -fopenmp exact_solution.f
+mpif77 -c  -O2 -fopenmp exact_rhs.f
+mpif77 -c  -O2 -fopenmp set_constants.f
+mpif77 -c  -O2 -fopenmp adi.f
+mpif77 -c  -O2 -fopenmp rhs.f
+mpif77 -c  -O2 -fopenmp zone_setup.f
+mpif77 -c  -O2 -fopenmp x_solve.f
+mpif77 -c  -O2 -fopenmp y_solve.f
+mpif77 -c  -O2 -fopenmp exch_qbc.f
+mpif77 -c  -O2 -fopenmp solve_subs.f
+mpif77 -c  -O2 -fopenmp z_solve.f
+mpif77 -c  -O2 -fopenmp add.f
+mpif77 -c  -O2 -fopenmp error.f
+mpif77 -c  -O2 -fopenmp verify.f
+mpif77 -c  -O2 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O2 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O2 -fopenmp timers.f
+mpif77 -O2 -fopenmp -o ../bin/bt-mz.B.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ make bt-mz CLASS=C NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 C
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O2 -fopenmp bt.f
+mpif77 -c  -O2 -fopenmp initialize.f
+mpif77 -c  -O2 -fopenmp exact_solution.f
+mpif77 -c  -O2 -fopenmp exact_rhs.f
+mpif77 -c  -O2 -fopenmp set_constants.f
+mpif77 -c  -O2 -fopenmp adi.f
+mpif77 -c  -O2 -fopenmp rhs.f
+mpif77 -c  -O2 -fopenmp zone_setup.f
+mpif77 -c  -O2 -fopenmp x_solve.f
+mpif77 -c  -O2 -fopenmp y_solve.f
+mpif77 -c  -O2 -fopenmp exch_qbc.f
+mpif77 -c  -O2 -fopenmp solve_subs.f
+mpif77 -c  -O2 -fopenmp z_solve.f
+mpif77 -c  -O2 -fopenmp add.f
+mpif77 -c  -O2 -fopenmp error.f
+mpif77 -c  -O2 -fopenmp verify.f
+mpif77 -c  -O2 -fopenmp mpi_setup.f
+mpif77 -O2 -fopenmp -o ../bin/bt-mz.C.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ echo O2
+O2
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.250s
+user	0m0.022s
+sys	0m0.059s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.030s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.027s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.233s
+user	0m0.033s
+sys	0m0.038s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.031s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.020s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.025s
+sys	0m0.053s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.275s
+user	0m0.030s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.031s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.028s
+sys	0m0.053s
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.027s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.027s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.035s
+sys	0m0.043s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.234s
+user	0m0.027s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.035s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.029s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.405s
+user	0m0.031s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.028s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.028s
+sys	0m0.054s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.229s
+user	0m0.026s
+sys	0m0.041s
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.025s
+sys	0m0.053s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.251s
+user	0m0.031s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.029s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.023s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.236s
+user	0m0.033s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.028s
+sys	0m0.040s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.031s
+sys	0m0.047s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.226s
+user	0m0.017s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.248s
+user	0m0.032s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.034s
+sys	0m0.040s
++ echo '------------Class C------------'
+------------Class C------------
++ mpirun -np 64 bin/bt-mz.C.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.032s
+sys	0m0.043s
++ cp config/makeo3.def config/make.def
++ make bt-mz CLASS=W NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 W
+setparams: Maximum number of processors for benchmark bt-mz, class W is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 A
+setparams: Maximum number of processors for benchmark bt-mz, class A is 16
+make[1]: *** [config] Error 1
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O3 -fopenmp bt.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp solve_subs.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O3 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O3 -fopenmp timers.f
+mpif77 -O3 -fopenmp -o ../bin/bt-mz.B.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ make bt-mz CLASS=C NPROCS=64
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C NPROCS=64 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams bt-mz 64 C
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+mpif77 -c  -O3 -fopenmp bt.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp solve_subs.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -O3 -fopenmp -o ../bin/bt-mz.C.64 bt.o  initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o zone_setup.o x_solve.o y_solve.o  exch_qbc.o solve_subs.o z_solve.o add.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/BT-MZ'
++ echo O3
+O3
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.433s
+user	0m0.030s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.029s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.033s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.030s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.026s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.032s
+sys	0m0.045s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.238s
+user	0m0.032s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.229s
+user	0m0.027s
+sys	0m0.036s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.246s
+user	0m0.029s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.W.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.241s
+user	0m0.025s
+sys	0m0.049s
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.025s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.030s
+sys	0m0.036s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.023s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.026s
+sys	0m0.048s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.283s
+user	0m0.029s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.026s
+sys	0m0.050s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.032s
+sys	0m0.044s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.029s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.231s
+user	0m0.026s
+sys	0m0.042s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.A.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.024s
+sys	0m0.054s
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.230s
+user	0m0.028s
+sys	0m0.040s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.245s
+user	0m0.027s
+sys	0m0.049s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.235s
+user	0m0.032s
+sys	0m0.041s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.037s
+sys	0m0.040s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.032s
+sys	0m0.046s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.236s
+user	0m0.033s
+sys	0m0.043s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.239s
+user	0m0.025s
+sys	0m0.052s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.244s
+user	0m0.023s
+sys	0m0.054s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.240s
+user	0m0.023s
+sys	0m0.051s
++ for i in '{1..10}'
++ mpirun -np 64 bin/bt-mz.B.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.236s
+user	0m0.035s
+sys	0m0.041s
++ echo '------------Class C------------'
+------------Class C------------
++ mpirun -np 64 bin/bt-mz.C.64
+--------------------------------------------------------------------------
+WARNING: a request was made to bind a process. While the system
+supports binding the process itself, at least one node does NOT
+support binding memory to the process location.
+
+  Node:  compute-641-20
+
+This usually is due to not having the required NUMA support installed
+on the node. In some Linux distributions, the required support is
+contained in the libnumactl and libnumactl-devel packages.
+This is a warning only; your job will continue, though performance may be degraded.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A request was made to bind to that would result in binding more
+processes than cpus on a resource:
+
+   Bind to:     NONE
+   Node:        compute-641-20
+   #processes:  2
+   #cpus:       1
+
+You can override this protection by adding the "overload-allowed"
+option to your binding directive.
+--------------------------------------------------------------------------
+
+real	0m0.231s
+user	0m0.022s
+sys	0m0.046s
