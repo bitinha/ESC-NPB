@@ -17,8 +17,7 @@ for file in os.listdir('commands_output'):
 regexMatch = r'Mem:\s+(?P<Mem_total>\d+)k total,\s+(?P<Mem_used>\d+)k used'
 regexMatch2 = r'Swap:\s+(?P<Swap_total>\d+)k total,\s+(?P<Swap_used>\d+)k used'
 
-
-regexMatch3 = (r'\s+\d+\s+\w+\s+\d+\s+\d+\s+\w+\s+(?P<res>\d+)\s+\d+\s+\w+\s+(?P<CPU>\d\.\d)\s+(?P<MEM>\d\.\d)')
+regexMatch3 = r'\s*\d+\s+\w+\s+\d+\s+\d+\s+\d+\w?\s+(?P<res>\d+)\w?\s+\d+\s+\w+\s+(?P<CPU>\d+\.\d+)\s+(?P<MEM>\d+\.\d+)'
 
 mem_used_list = []
 swap_used_list = []

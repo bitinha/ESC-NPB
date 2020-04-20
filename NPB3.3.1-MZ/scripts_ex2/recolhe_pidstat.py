@@ -15,12 +15,12 @@ for file in os.listdir('commands_output'):
 #print(list_files)
 
 regexMatch = (r'(?P<time>\d{2}:\d{2}:\d{2}) \s+ (?P<pid>\d+) \s+ (?P<usr>\d+\.\d+) \s+'
-    '(?P<sys>\d+\.\d+) \s+ (?P<guest>\d+\.\d+) \s+ (?P<idle>\d+\.\d+)')
+    '(?P<sys>\d+\.\d+) \s+ (?P<guest>\d+\.\d+) \s+ (?P<cpu>\d+\.\d+)')
 
 usr_list = []
 sys_list = []
 guest_list = []
-idle_list = []
+cpu_list = []
 
 i = 0
 for file in list_files:
@@ -31,10 +31,10 @@ for file in list_files:
                 usr_list.append(float(m.group('usr')))
                 sys_list.append(float(m.group('sys')))
                 guest_list.append(float(m.group('guest')))
-                idle_list.append(float(m.group('idle')))
+                cpu_list.append(float(m.group('cpu')))
                 i += 1
 
 print("usr: " + str(sum(usr_list) / i))
 print("sys: " + str(sum(sys_list) / i))
 print("guest: " + str(sum(guest_list) / i))
-print("idle: " + str(sum(idle_list) / i))
+print("cpu: " + str(sum(cpu_list) / i))
