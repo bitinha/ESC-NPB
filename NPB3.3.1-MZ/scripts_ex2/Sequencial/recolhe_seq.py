@@ -18,7 +18,7 @@ def findMaxTime(lista):
 def top(file):
     regexMatch = r'Mem:\s+(?P<Mem_total>\d+)k total,\s+(?P<Mem_used>\d+)k used'
     regexMatch2 = r'Swap:\s+(?P<Swap_total>\d+)k total,\s+(?P<Swap_used>\d+)k used'
-    regexMatch3 = r'\s*\d+\s+\w+\s+\d+\s+\d+\s+\d+\w?\s+(?P<res>\d+m?)\s+\d+\s+\w+\s+(?P<CPU>\d+\.\d+)\s+(?P<MEM>\d+\.\d+)\s+\d+:\d+\.\d+\s+(?P<COMMAND>'+r'bt.*'+')'
+    regexMatch3 = r'\s*\d+\s+\w+\s+\d+\s+\d+\s+\d+\w?\s+(?P<res>\d+m?)\s+\d+\s+\w+\s+(?P<CPU>\d+\.\d+)\s+(?P<MEM>\d+\.\d+)\s+\d+:\d+\.\d+\s+(?P<COMMAND>'+r'lu.*'+')'
     
     res_f = 0
     cpu_f = 0
@@ -48,7 +48,7 @@ def top(file):
 def pidstat(file):
     regexMatch = (r'(?P<time>\d{2}:\d{2}:\d{2})\s+(?P<pid>\d+)\s+(?P<usr>\d+\.\d+)\s+'
     '(?P<sys>\d+\.\d+)\s+(?P<guest>\d+\.\d+)\s+(?P<cpu>\d+\.\d+)'
-    '\s+\d+\s+(?P<COMMAND>'+r'bt'+')')
+    '\s+\d+\s+(?P<COMMAND>'+r'lu'+')')
     regexNewLine = r'.*Command'
 
     usr = 0
@@ -99,30 +99,7 @@ def pidstat_d(file):
     d["kb_rd"] = kb_rd / (n_prints)
     d["kb_wd"] = kb_wd / n_prints
     d["kb_ccwr"] = kb_ccwr / n_prints
-
-def iostat(file):
-    regexMatch = r'sda\s+(?P<tp>\d\.\d+)\s+(?P<kb_rd>\d\.\d+)\s+(?P<kb_wd>\d\.\d+)'
-    regexNewPrint = r'avg-cpu.*'
-    
-    n_prints = 0
-    tp = kb_rd = kb_wd = 0
-
-    with open('commands_output/' + file) as fp:
-        for line in enumerate(fp):
-            m = re.match(regexMatch, line[1])
-            m2 = re.match(regexNewPrint, line[1])
-
-            if m2 is not None:
-                n_prints += 1
-
-            if m is not None:
-                tp += float(m.group('tp'))
-                kb_rd += float(m.group('kb_rd'))
-                kb_wd += float(m.group('kb_wd'))
-    
-    d["tp"] = tp / n_prints
-    d["kb_rd"] = kb_rd / (n_prints)
-    d["kb_wd"] = kb_wd / n_prints
+        
 
 def mpstat(file):
     regexMatch = (r'(?P<time>\d{2}:\d{2}:\d{2})\s+all\s+(?P<usr>\d+\.\d+)\s+'
@@ -206,8 +183,6 @@ with open(file_tempos) as fp:
                         pidstat_d(command_file)
                     if command == 'mpstat':
                         mpstat(command_file)
-                    if command == 'iostat':
-                        iostat(command_file)
 
                     l = resultados.get(Class+fflags,list())
                     l.append(d)
@@ -215,7 +190,7 @@ with open(file_tempos) as fp:
                     
                     last = Class+fflags
                     state = ""
-        elif re.match(r'\+ mpirun',line[1]):
+        elif re.match(r'\+ bin',line[1]):
             state = "bin"
             bin_name = line[1].split('/')[1].split('\n')[0]
             
@@ -235,7 +210,7 @@ for lista in resultados.values():
     Class = minimos[0]["Class"]
     fflags = minimos[0]["FFlags"]
     time = 0
-    res = cpu = usr = sys = guest = cpu = iowait = idle = kB_ccwr = kB_wd = kB_rd = tp = 0
+    res = cpu = usr = sys = guest = cpu = iowait = idle = kB_ccwr = kB_wd = kB_rd = 0
 
     for e in minimos:
         time += e["Time"]
@@ -267,13 +242,6 @@ for lista in resultados.values():
                 sys += e["sys"]
                 iowait += e["iowait"]
                 idle += e["idle"]
-            except:
-                pass
-        if command == 'iostat':
-            try:
-                tp += e["tp"]
-                kb_rd += e["kb_rd"]
-                kb_wd += e["kb_wd"]
             except:
                 pass
 
@@ -326,10 +294,3 @@ for lista in resultados.values():
         idle = round(idle / len(minimos), 3)
 
         print(str(x)+ " " + str(y)+ " " + str(time) + " " + str(usr) + " " + str(sys) + " " + str(usr+sys) + " " + str(iowait) + " " + str(idle) + " " + fflags + " " + Class +" ")
-
-    if command == 'iostat':
-        tp = round(tp / len(minimos), 3)
-        kB_rd = round(kB_rd / len(minimos), 3)
-        kB_wd = round(kB_wd / len(minimos), 3)
-
-        print(str(x)+ " " + str(y)+ " " + str(time) + " " + str(tp) + " " + str(kB_rd) + " " + str(kB_wd) + " " + fflags + " " + Class +" ")
