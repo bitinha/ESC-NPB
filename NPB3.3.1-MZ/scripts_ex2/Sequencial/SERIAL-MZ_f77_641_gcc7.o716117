@@ -1,0 +1,4220 @@
++ cp config/makeo0.def config/make.def
++ make bt-mz CLASS=W
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz W
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O0 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.W.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O0 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.A.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O0 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.B.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=C
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz C
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O0 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.C.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ echo O0
+O0
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 1
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=32722
+++ top -d 2 -b -p 32722
+++ pidstat 2 -p 32722
+++ pidstat 2 -d -p 32722
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 32722
+++ free -ms 2
+++ vmstat 2
+++ wait 32722
+++ ps -p 32722 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16: 32724 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16: 32725 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17: 32726 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18: 32727 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19: 32728 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20: 32729 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21: 32730 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 2
++ bin/bt-mz.W.x
+++ pid=32741
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ top -d 2 -b -p 32741
+++ pidstat 2 -p 32741
+++ pidstat 2 -d -p 32741
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 32741
+++ free -ms 2
+++ vmstat 2
+++ wait 32741
+++ pkill top
+++ ps -p 32741 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16: 32743 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16: 32744 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17: 32745 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18: 32746 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19: 32747 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20: 32748 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21: 32749 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 3
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=32760
+++ top -d 2 -b -p 32760
+++ pidstat 2 -p 32760
+++ pidstat 2 -d -p 32760
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 32760
+++ free -ms 2
+++ vmstat 2
+++ ps -p 32760 -o pid,%mem,%cpu
+++ wait 32760
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16: 32762 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16: 32763 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17: 32764 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18: 32765 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19: 32766 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20: 32767 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   406 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 4
++ bin/bt-mz.W.x
+++ pid=449
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ top -d 2 -b -p 449
+++ pidstat 2 -p 449
+++ pidstat 2 -d -p 449
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 449
+++ free -ms 2
+++ wait 449
+++ pkill top
+++ vmstat 2
+++ ps -p 449 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   451 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   452 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   453 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   454 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   455 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   456 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   457 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 5
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=468
+++ top -d 2 -b -p 468
+++ pidstat 2 -p 468
+++ pidstat 2 -d -p 468
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 468
+++ free -ms 2
+++ vmstat 2
+++ ps -p 468 -o pid,%mem,%cpu
+++ wait 468
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   470 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   471 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   472 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   473 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   474 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   475 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   476 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 6
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=487
+++ top -d 2 -b -p 487
+++ pidstat 2 -p 487
+++ pidstat 2 -d -p 487
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 487
+++ free -ms 2
+++ vmstat 2
+++ wait 487
+++ ps -p 487 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   489 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   490 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   491 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   492 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   493 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   494 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   495 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 7
++ bin/bt-mz.W.x
+++ pid=506
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ top -d 2 -b -p 506
+++ pidstat 2 -p 506
+++ pidstat 2 -d -p 506
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 506
+++ free -ms 2
+++ vmstat 2
+++ ps -p 506 -o pid,%mem,%cpu
+++ wait 506
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   508 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   509 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   510 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   511 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   512 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   513 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   514 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 8
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=527
+++ top -d 2 -b -p 527
+++ pidstat 2 -p 527
+++ pidstat 2 -d -p 527
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 527
+++ free -ms 2
+++ vmstat 2
+++ ps -p 527 -o pid,%mem,%cpu
+++ wait 527
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   529 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   530 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   531 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   532 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   533 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   534 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   535 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 9
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=546
+++ top -d 2 -b -p 546
+++ pidstat 2 -p 546
+++ pidstat 2 -d -p 546
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 546
+++ free -ms 2
+++ vmstat 2
+++ wait 546
+++ pkill top
+++ ps -p 546 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   549 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   550 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   551 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   552 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   553 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   554 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   555 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_W 10
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 26: bin/bt-mz.W.x: No such file or directory
+++ pid=566
+++ top -d 2 -b -p 566
+++ pidstat 2 -p 566
+++ pidstat 2 -d -p 566
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 566
+++ free -ms 2
+++ vmstat 2
+++ wait 566
+++ pkill top
+++ ps -p 566 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   568 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   569 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   570 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   571 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   572 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   573 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   574 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 1
++ bin/bt-mz.A.x
+++ pid=585
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ top -d 2 -b -p 585
+++ pidstat 2 -p 585
+++ pidstat 2 -d -p 585
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 585
+++ free -ms 2
+++ vmstat 2
+++ wait 585
+++ ps -p 585 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   587 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   588 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   589 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   590 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   591 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   592 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   593 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 2
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=604
+++ top -d 2 -b -p 604
+++ pidstat 2 -p 604
+++ pidstat 2 -d -p 604
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 604
+++ free -ms 2
+++ vmstat 2
+++ ps -p 604 -o pid,%mem,%cpu
+++ wait 604
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   606 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   607 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   608 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   609 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   610 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   611 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   612 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 3
++ bin/bt-mz.A.x
+++ pid=623
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ top -d 2 -b -p 623
+++ pidstat 2 -p 623
+++ pidstat 2 -d -p 623
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 623
+++ free -ms 2
+++ vmstat 2
+++ wait 623
+++ pkill top
+++ ps -p 623 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   625 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   626 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   627 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   628 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   629 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   630 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   631 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 4
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=642
+++ top -d 2 -b -p 642
+++ pidstat 2 -p 642
+++ pidstat 2 -d -p 642
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 642
+++ free -ms 2
+++ vmstat 2
+++ ps -p 642 -o pid,%mem,%cpu
+++ wait 642
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   644 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   645 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   646 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   647 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   648 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   649 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   650 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 5
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=662
+++ top -d 2 -b -p 662
+++ pidstat 2 -p 662
+++ pidstat 2 -d -p 662
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 662
+++ free -ms 2
+++ vmstat 2
+++ wait 662
+++ pkill top
+++ ps -p 662 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   664 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   665 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   666 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   667 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   668 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   669 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   670 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 6
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=681
+++ top -d 2 -b -p 681
+++ pidstat 2 -p 681
+++ pidstat 2 -d -p 681
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 681
+++ free -ms 2
+++ vmstat 2
+++ ps -p 681 -o pid,%mem,%cpu
+++ wait 681
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   683 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   684 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   685 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   686 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   687 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   688 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   689 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 7
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=700
+++ top -d 2 -b -p 700
+++ pidstat 2 -p 700
+++ pidstat 2 -d -p 700
+++ mpstat 2
+++ lsof -r 2 -p 700
+++ free -ms 2
+++ vmstat 2
+++ iostat -t 2
+++ ps -p 700 -o pid,%mem,%cpu
+++ wait 700
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   702 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   703 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   704 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   705 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   706 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   707 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   708 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 8
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=719
+++ top -d 2 -b -p 719
+++ pidstat 2 -p 719
+++ pidstat 2 -d -p 719
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 719
+++ free -ms 2
+++ vmstat 2
+++ wait 719
+++ pkill top
+++ ps -p 719 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   721 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   722 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   723 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   724 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   725 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   726 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   727 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 9
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ pid=738
+++ top -d 2 -b -p 738
+++ pidstat 2 -p 738
+++ pidstat 2 -d -p 738
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 738
+++ free -ms 2
+++ vmstat 2
+++ wait 738
+++ ps -p 738 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   740 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   741 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   742 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   743 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   744 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   745 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   746 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_A 10
++ bin/bt-mz.A.x
+++ pid=757
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 33: bin/bt-mz.A.x: No such file or directory
+++ top -d 2 -b -p 757
+++ pidstat 2 -p 757
+++ pidstat 2 -d -p 757
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 757
+++ vmstat 2
+++ free -ms 2
+++ wait 757
+++ pkill top
+++ ps -p 757 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   759 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   760 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   761 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   762 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   763 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   764 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   765 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 1
++ bin/bt-mz.B.x
+++ pid=776
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 776
+++ pidstat 2 -p 776
+++ pidstat 2 -d -p 776
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 776
+++ free -ms 2
+++ vmstat 2
+++ wait 776
+++ pkill top
+++ ps -p 776 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   778 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   779 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   780 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   781 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   782 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   783 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   784 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 2
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=795
+++ top -d 2 -b -p 795
+++ pidstat 2 -p 795
+++ pidstat 2 -d -p 795
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 795
+++ free -ms 2
+++ vmstat 2
+++ ps -p 795 -o pid,%mem,%cpu
+++ wait 795
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   797 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   798 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   799 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   800 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   801 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   802 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   803 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 3
++ bin/bt-mz.B.x
+++ pid=814
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 814
+++ pidstat 2 -p 814
+++ pidstat 2 -d -p 814
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 814
+++ free -ms 2
+++ vmstat 2
+++ wait 814
+++ ps -p 814 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   816 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   817 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   818 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   819 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   820 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   821 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   822 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 4
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=833
+++ top -d 2 -b -p 833
+++ pidstat 2 -p 833
+++ pidstat 2 -d -p 833
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 833
+++ free -ms 2
+++ vmstat 2
+++ wait 833
+++ ps -p 833 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   835 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   836 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   837 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   838 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   839 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   840 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   841 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 5
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=852
+++ top -d 2 -b -p 852
+++ pidstat 2 -p 852
+++ pidstat 2 -d -p 852
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 852
+++ free -ms 2
+++ vmstat 2
+++ ps -p 852 -o pid,%mem,%cpu
+++ wait 852
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   854 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   855 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   856 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   857 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   858 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   859 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   860 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 6
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=871
+++ top -d 2 -b -p 871
+++ pidstat 2 -p 871
+++ pidstat 2 -d -p 871
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 871
+++ free -ms 2
+++ vmstat 2
+++ wait 871
+++ ps -p 871 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   873 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   874 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   881 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   882 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   883 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   884 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   885 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 7
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=896
+++ top -d 2 -b -p 896
+++ pidstat 2 -p 896
+++ pidstat 2 -d -p 896
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 896
+++ free -ms 2
+++ vmstat 2
+++ ps -p 896 -o pid,%mem,%cpu
+++ wait 896
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   898 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   899 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   900 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   901 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   902 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   903 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   904 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 8
++ bin/bt-mz.B.x
+++ pid=915
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 915
+++ pidstat 2 -d -p 915
+++ pidstat 2 -p 915
+++ mpstat 2
+++ iostat -t 2
+++ free -ms 2
+++ lsof -r 2 -p 915
+++ vmstat 2
+++ wait 915
+++ ps -p 915 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   917 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   918 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   919 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   920 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   921 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   922 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   923 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 9
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=934
+++ top -d 2 -b -p 934
+++ pidstat 2 -p 934
+++ pidstat 2 -d -p 934
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 934
+++ free -ms 2
+++ vmstat 2
+++ wait 934
+++ ps -p 934 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   936 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   937 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   938 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   939 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   940 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   941 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   942 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_B 10
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 40: bin/bt-mz.B.x: No such file or directory
+++ pid=953
+++ top -d 2 -b -p 953
+++ pidstat 2 -p 953
+++ pidstat 2 -d -p 953
+++ iostat -t 2
+++ mpstat 2
+++ lsof -r 2 -p 953
+++ free -ms 2
+++ vmstat 2
+++ wait 953
+++ ps -p 953 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   955 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   956 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   957 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   958 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   959 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   960 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   961 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class C------------'
+------------Class C------------
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_00_class_C 10
++ bin/bt-mz.C.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 46: bin/bt-mz.C.x: No such file or directory
+++ pid=972
+++ top -d 2 -b -p 972
+++ pidstat 2 -p 972
+++ pidstat 2 -d -p 972
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 972
+++ free -ms 2
+++ vmstat 2
+++ ps -p 972 -o pid,%mem,%cpu
+++ wait 972
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:   974 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:   975 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:   976 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:   977 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:   978 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:   979 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:   980 Terminated              vmstat 2 > $1_vmstat_$2
++ cp config/makeo1.def config/make.def
++ make bt-mz CLASS=W
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz W
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O1 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.W.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O1 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.A.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O1 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.B.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=C
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz C
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O1 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.C.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ echo O1
+O1
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 1
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1043
+++ top -d 2 -b -p 1043
+++ pidstat 2 -p 1043
+++ pidstat 2 -d -p 1043
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1043
+++ free -ms 2
+++ vmstat 2
+++ wait 1043
+++ ps -p 1043 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1045 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1046 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1047 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1048 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1049 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1050 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1051 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 2
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1095
+++ top -d 2 -b -p 1095
+++ pidstat 2 -p 1095
+++ pidstat 2 -d -p 1095
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1095
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1095 -o pid,%mem,%cpu
+++ wait 1095
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1097 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1098 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1099 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1100 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1101 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1102 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1103 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 3
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1114
+++ top -d 2 -b -p 1114
+++ pidstat 2 -p 1114
+++ pidstat 2 -d -p 1114
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1114
+++ vmstat 2
+++ wait 1114
+++ ps -p 1114 -o pid,%mem,%cpu
+++ pkill top
+++ free -ms 2
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1116 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1117 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1118 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1119 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1120 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1121 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1122 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 4
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1134
+++ top -d 2 -b -p 1134
+++ pidstat 2 -p 1134
+++ pidstat 2 -d -p 1134
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1134
+++ free -ms 2
+++ vmstat 2
+++ wait 1134
+++ ps -p 1134 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1136 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1137 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1138 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1139 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1140 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1141 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1142 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 5
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1153
+++ top -d 2 -b -p 1153
+++ pidstat 2 -p 1153
+++ pidstat 2 -d -p 1153
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1153
+++ free -ms 2
+++ vmstat 2
+++ wait 1153
+++ ps -p 1153 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1155 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1156 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1157 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1158 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1159 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1160 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1161 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 6
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1172
+++ top -d 2 -b -p 1172
+++ pidstat 2 -p 1172
+++ pidstat 2 -d -p 1172
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1172
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1172 -o pid,%mem,%cpu
+++ wait 1172
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1175 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1176 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1177 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1178 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1179 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1180 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1181 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 7
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1192
+++ top -d 2 -b -p 1192
+++ pidstat 2 -p 1192
+++ pidstat 2 -d -p 1192
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1192
+++ free -ms 2
+++ vmstat 2
+++ wait 1192
+++ ps -p 1192 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1194 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1195 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1196 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1197 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1198 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1199 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1200 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 8
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1211
+++ top -d 2 -b -p 1211
+++ pidstat 2 -p 1211
+++ pidstat 2 -d -p 1211
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1211
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1211 -o pid,%mem,%cpu
+++ wait 1211
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1213 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1214 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1215 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1216 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1217 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1218 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1219 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 9
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1230
+++ top -d 2 -b -p 1230
+++ pidstat 2 -p 1230
+++ pidstat 2 -d -p 1230
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1230
+++ free -ms 2
+++ vmstat 2
+++ wait 1230
+++ pkill top
+++ ps -p 1230 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1232 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1233 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1234 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1235 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1236 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1237 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1238 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_W 10
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 60: bin/bt-mz.W.x: No such file or directory
+++ pid=1249
+++ top -d 2 -b -p 1249
+++ pidstat 2 -p 1249
+++ pidstat 2 -d -p 1249
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1249
+++ vmstat 2
+++ free -ms 2
+++ wait 1249
+++ pkill top
+++ ps -p 1249 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1251 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1252 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1253 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1254 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1255 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1256 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1257 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 1
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1268
+++ top -d 2 -b -p 1268
+++ pidstat 2 -p 1268
+++ pidstat 2 -d -p 1268
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1268
+++ free -ms 2
+++ vmstat 2
+++ wait 1268
+++ ps -p 1268 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1270 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1271 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1272 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1273 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1274 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1275 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1276 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 2
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1287
+++ top -d 2 -b -p 1287
+++ pidstat 2 -p 1287
+++ pidstat 2 -d -p 1287
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1287
+++ free -ms 2
+++ vmstat 2
+++ wait 1287
+++ pkill top
+++ ps -p 1287 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1289 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1290 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1291 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1292 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1293 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1294 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1295 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 3
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1306
+++ top -d 2 -b -p 1306
+++ pidstat 2 -p 1306
+++ pidstat 2 -d -p 1306
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1306
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1306 -o pid,%mem,%cpu
+++ wait 1306
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1308 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1309 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1310 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1311 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1312 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1313 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1314 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 4
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1325
+++ top -d 2 -b -p 1325
+++ pidstat 2 -p 1325
+++ pidstat 2 -d -p 1325
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1325
+++ free -ms 2
+++ vmstat 2
+++ wait 1325
+++ ps -p 1325 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1327 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1328 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1329 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1330 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1331 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1332 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1333 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 5
++ bin/bt-mz.A.x
+++ pid=1344
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ top -d 2 -b -p 1344
+++ pidstat 2 -p 1344
+++ pidstat 2 -d -p 1344
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1344
+++ free -ms 2
+++ vmstat 2
+++ wait 1344
+++ ps -p 1344 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1346 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1347 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1348 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1349 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1350 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1351 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1352 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 6
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1363
+++ top -d 2 -b -p 1363
+++ pidstat 2 -p 1363
+++ pidstat 2 -d -p 1363
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1363
+++ free -ms 2
+++ vmstat 2
+++ wait 1363
+++ ps -p 1363 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1365 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1366 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1367 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1368 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1369 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1370 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1371 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 7
++ bin/bt-mz.A.x
+++ pid=1382
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ top -d 2 -b -p 1382
+++ pidstat 2 -p 1382
+++ pidstat 2 -d -p 1382
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1382
+++ free -ms 2
+++ vmstat 2
+++ wait 1382
+++ ps -p 1382 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1384 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1385 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1386 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1387 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1388 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1389 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1390 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 8
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1401
+++ top -d 2 -b -p 1401
+++ pidstat 2 -p 1401
+++ pidstat 2 -d -p 1401
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1401
+++ free -ms 2
+++ vmstat 2
+++ wait 1401
+++ ps -p 1401 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1403 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1404 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1405 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1406 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1407 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1408 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1409 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 9
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1420
+++ top -d 2 -b -p 1420
+++ pidstat 2 -p 1420
+++ pidstat 2 -d -p 1420
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1420
+++ free -ms 2
+++ vmstat 2
+++ wait 1420
+++ ps -p 1420 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1422 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1423 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1424 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1425 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1426 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1427 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1428 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_A 10
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 67: bin/bt-mz.A.x: No such file or directory
+++ pid=1439
+++ top -d 2 -b -p 1439
+++ pidstat 2 -p 1439
+++ pidstat 2 -d -p 1439
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1439
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1439 -o pid,%mem,%cpu
+++ wait 1439
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1441 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1442 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1443 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1444 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1445 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1446 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1447 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 1
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1458
+++ top -d 2 -b -p 1458
+++ pidstat 2 -p 1458
+++ mpstat 2
+++ iostat -t 2
+++ pidstat 2 -d -p 1458
+++ lsof -r 2 -p 1458
+++ free -ms 2
+++ vmstat 2
+++ wait 1458
+++ ps -p 1458 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1460 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1461 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1462 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1463 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1464 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1465 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1466 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 2
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1477
+++ top -d 2 -b -p 1477
+++ pidstat 2 -p 1477
+++ pidstat 2 -d -p 1477
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1477
+++ free -ms 2
+++ vmstat 2
+++ wait 1477
+++ ps -p 1477 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1479 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1480 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1481 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1482 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1483 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1484 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1485 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 3
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1496
+++ top -d 2 -b -p 1496
+++ pidstat 2 -p 1496
+++ pidstat 2 -d -p 1496
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1496
+++ free -ms 2
+++ vmstat 2
+++ wait 1496
+++ ps -p 1496 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1498 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1499 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1500 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1501 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1502 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1503 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1504 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 4
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1515
+++ top -d 2 -b -p 1515
+++ pidstat 2 -p 1515
+++ pidstat 2 -d -p 1515
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1515
+++ free -ms 2
+++ vmstat 2
+++ wait 1515
+++ ps -p 1515 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1517 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1518 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1519 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1520 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1521 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1522 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1523 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 5
++ bin/bt-mz.B.x
+++ pid=1534
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 1534
+++ pidstat 2 -p 1534
+++ pidstat 2 -d -p 1534
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1534
+++ free -ms 2
+++ vmstat 2
+++ wait 1534
+++ ps -p 1534 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1536 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1537 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1538 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1539 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1540 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1541 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1542 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 6
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1553
+++ top -d 2 -b -p 1553
+++ pidstat 2 -p 1553
+++ pidstat 2 -d -p 1553
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1553
+++ free -ms 2
+++ vmstat 2
+++ wait 1553
+++ ps -p 1553 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1555 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1556 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1557 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1558 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1559 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1560 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1561 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 7
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1572
+++ top -d 2 -b -p 1572
+++ pidstat 2 -p 1572
+++ pidstat 2 -d -p 1572
+++ mpstat 2
+++ iostat -t 2
+++ free -ms 2
+++ lsof -r 2 -p 1572
+++ vmstat 2
+++ wait 1572
+++ ps -p 1572 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1574 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1575 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1576 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1577 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1578 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1579 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1580 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 8
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1591
+++ top -d 2 -b -p 1591
+++ pidstat 2 -p 1591
+++ pidstat 2 -d -p 1591
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1591
+++ free -ms 2
+++ vmstat 2
+++ wait 1591
+++ ps -p 1591 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1593 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1594 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1595 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1596 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1597 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1598 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1599 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 9
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1610
+++ top -d 2 -b -p 1610
+++ pidstat 2 -p 1610
+++ pidstat 2 -d -p 1610
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1610
+++ free -ms 2
+++ vmstat 2
+++ wait 1610
+++ ps -p 1610 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1612 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1613 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1614 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1615 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1616 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1617 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1618 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_B 10
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 74: bin/bt-mz.B.x: No such file or directory
+++ pid=1629
+++ top -d 2 -b -p 1629
+++ pidstat 2 -p 1629
+++ pidstat 2 -d -p 1629
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1629
+++ free -ms 2
+++ vmstat 2
+++ wait 1629
+++ ps -p 1629 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1631 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1632 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1633 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1634 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1635 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1636 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1637 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class C------------'
+------------Class C------------
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_01_class_C 10
++ bin/bt-mz.C.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 80: bin/bt-mz.C.x: No such file or directory
+++ pid=1648
+++ top -d 2 -b -p 1648
+++ pidstat 2 -p 1648
+++ pidstat 2 -d -p 1648
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1648
+++ free -ms 2
+++ vmstat 2
+++ ps -p 1648 -o pid,%mem,%cpu
+++ wait 1648
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1650 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1651 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1652 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1653 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1654 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1655 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1656 Terminated              vmstat 2 > $1_vmstat_$2
++ cp config/makeo2.def config/make.def
++ make bt-mz CLASS=W
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz W
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O2 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.W.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O2 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.A.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O2 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.B.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=C
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz C
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O2 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.C.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ echo O2
+O2
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 1
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1717
+++ top -d 2 -b -p 1717
+++ pidstat 2 -p 1717
+++ pidstat 2 -d -p 1717
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1717
+++ free -ms 2
+++ vmstat 2
+++ wait 1717
+++ ps -p 1717 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1719 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1720 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1721 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1722 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1723 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1724 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1725 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 2
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1736
+++ top -d 2 -b -p 1736
+++ pidstat 2 -p 1736
+++ pidstat 2 -d -p 1736
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1736
+++ free -ms 2
+++ vmstat 2
+++ wait 1736
+++ ps -p 1736 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1738 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1739 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1740 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1741 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1742 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1743 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1744 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 3
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1755
+++ top -d 2 -b -p 1755
+++ pidstat 2 -p 1755
+++ pidstat 2 -d -p 1755
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1755
+++ free -ms 2
+++ vmstat 2
+++ wait 1755
+++ ps -p 1755 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1757 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1758 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1759 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1760 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1761 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1762 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1763 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 4
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1774
+++ top -d 2 -b -p 1774
+++ pidstat 2 -p 1774
+++ pidstat 2 -d -p 1774
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1774
+++ free -ms 2
+++ vmstat 2
+++ wait 1774
+++ ps -p 1774 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1776 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1777 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1778 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1779 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1780 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1781 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1782 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 5
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1793
+++ top -d 2 -b -p 1793
+++ pidstat 2 -p 1793
+++ pidstat 2 -d -p 1793
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1793
+++ free -ms 2
+++ vmstat 2
+++ wait 1793
+++ ps -p 1793 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1795 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1796 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1797 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1798 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1799 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1800 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1801 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 6
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1812
+++ top -d 2 -b -p 1812
+++ pidstat 2 -d -p 1812
+++ pidstat 2 -p 1812
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1812
+++ free -ms 2
+++ vmstat 2
+++ wait 1812
+++ ps -p 1812 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1814 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1815 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1816 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1817 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1818 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1819 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1820 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 7
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1831
+++ top -d 2 -b -p 1831
+++ pidstat 2 -p 1831
+++ pidstat 2 -d -p 1831
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1831
+++ free -ms 2
+++ vmstat 2
+++ wait 1831
+++ pkill top
+++ ps -p 1831 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1833 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1834 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1835 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1836 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1837 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1838 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1839 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 8
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1850
+++ top -d 2 -b -p 1850
+++ pidstat 2 -p 1850
+++ pidstat 2 -d -p 1850
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1850
+++ free -ms 2
+++ vmstat 2
+++ wait 1850
+++ ps -p 1850 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1852 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1853 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1854 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1855 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1856 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1857 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1858 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 9
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1869
+++ top -d 2 -b -p 1869
+++ pidstat 2 -p 1869
+++ pidstat 2 -d -p 1869
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1869
+++ free -ms 2
+++ vmstat 2
+++ wait 1869
+++ ps -p 1869 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1871 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1872 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1873 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1874 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1875 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1876 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1877 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_W 10
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 94: bin/bt-mz.W.x: No such file or directory
+++ pid=1888
+++ top -d 2 -b -p 1888
+++ pidstat 2 -p 1888
+++ pidstat 2 -d -p 1888
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1888
+++ free -ms 2
+++ vmstat 2
+++ wait 1888
+++ pkill top
+++ ps -p 1888 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1890 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1891 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1892 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1893 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1894 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1895 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1896 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 1
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=1907
+++ top -d 2 -b -p 1907
+++ pidstat 2 -p 1907
+++ pidstat 2 -d -p 1907
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1907
+++ free -ms 2
+++ vmstat 2
+++ wait 1907
+++ ps -p 1907 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1909 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1910 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1911 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1912 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1913 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1914 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1915 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 2
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=1926
+++ top -d 2 -b -p 1926
+++ pidstat 2 -p 1926
+++ pidstat 2 -d -p 1926
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1926
+++ free -ms 2
+++ vmstat 2
+++ wait 1926
+++ ps -p 1926 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1928 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1929 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1930 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1931 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1932 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1933 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1934 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ bin/bt-mz.A.x
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 3
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=1945
+++ top -d 2 -b -p 1945
+++ pidstat 2 -p 1945
+++ pidstat 2 -d -p 1945
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1945
+++ free -ms 2
+++ vmstat 2
+++ wait 1945
+++ pkill top
+++ ps -p 1945 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1947 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1948 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1949 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1950 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1951 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1952 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1953 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 4
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=1964
+++ top -d 2 -b -p 1964
+++ pidstat 2 -p 1964
+++ pidstat 2 -d -p 1964
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1964
+++ free -ms 2
+++ vmstat 2
+++ wait 1964
+++ pkill top
+++ ps -p 1964 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1966 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1967 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1968 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1969 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1970 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1971 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1972 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 5
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=1983
+++ top -d 2 -b -p 1983
+++ pidstat 2 -p 1983
+++ pidstat 2 -d -p 1983
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 1983
+++ free -ms 2
+++ vmstat 2
+++ wait 1983
+++ pkill top
+++ ps -p 1983 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  1985 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  1986 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  1987 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  1988 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  1989 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  1990 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  1991 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 6
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=2002
+++ top -d 2 -b -p 2002
+++ pidstat 2 -p 2002
+++ pidstat 2 -d -p 2002
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2002
+++ free -ms 2
+++ vmstat 2
+++ wait 2002
+++ ps -p 2002 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2004 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2005 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2006 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2007 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2008 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2009 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2010 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 7
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=2021
+++ top -d 2 -b -p 2021
+++ pidstat 2 -p 2021
+++ pidstat 2 -d -p 2021
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2021
+++ free -ms 2
+++ vmstat 2
+++ wait 2021
+++ ps -p 2021 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2023 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2024 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2025 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2026 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2027 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2028 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2029 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 8
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=2040
+++ top -d 2 -b -p 2040
+++ pidstat 2 -p 2040
+++ pidstat 2 -d -p 2040
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2040
+++ free -ms 2
+++ vmstat 2
+++ wait 2040
+++ ps -p 2040 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2042 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2043 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2044 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2045 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2046 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2047 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2048 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 9
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=2059
+++ top -d 2 -b -p 2059
+++ pidstat 2 -p 2059
+++ pidstat 2 -d -p 2059
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2059
+++ free -ms 2
+++ vmstat 2
+++ wait 2059
+++ ps -p 2059 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2061 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2062 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2063 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2064 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2065 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2066 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2067 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_A 10
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 101: bin/bt-mz.A.x: No such file or directory
+++ pid=2078
+++ top -d 2 -b -p 2078
+++ pidstat 2 -p 2078
+++ pidstat 2 -d -p 2078
+++ iostat -t 2
+++ mpstat 2
+++ lsof -r 2 -p 2078
+++ free -ms 2
+++ vmstat 2
+++ wait 2078
+++ pkill top
+++ ps -p 2078 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2080 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2081 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2082 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2083 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2084 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2085 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2086 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 1
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2097
+++ top -d 2 -b -p 2097
+++ pidstat 2 -p 2097
+++ pidstat 2 -d -p 2097
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2097
+++ free -ms 2
+++ vmstat 2
+++ wait 2097
+++ pkill top
+++ ps -p 2097 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2099 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2100 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2101 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2102 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2103 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2104 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2105 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 2
++ bin/bt-mz.B.x
+++ pid=2116
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 2116
+++ pidstat 2 -p 2116
+++ pidstat 2 -d -p 2116
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2116
+++ free -ms 2
+++ vmstat 2
+++ wait 2116
+++ pkill top
+++ ps -p 2116 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2118 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2119 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2120 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2121 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2122 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2123 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2124 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 3
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2135
+++ top -d 2 -b -p 2135
+++ pidstat 2 -p 2135
+++ pidstat 2 -d -p 2135
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2135
+++ free -ms 2
+++ vmstat 2
+++ wait 2135
+++ pkill top
+++ ps -p 2135 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2137 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2138 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2139 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2140 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2141 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2142 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2143 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 4
++ bin/bt-mz.B.x
+++ pid=2154
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 2154
+++ pidstat 2 -p 2154
+++ pidstat 2 -d -p 2154
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2154
+++ free -ms 2
+++ vmstat 2
+++ wait 2154
+++ ps -p 2154 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2156 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2157 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2158 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2159 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2160 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2161 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2162 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 5
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2173
+++ top -d 2 -b -p 2173
+++ pidstat 2 -p 2173
+++ pidstat 2 -d -p 2173
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2173
+++ free -ms 2
+++ vmstat 2
+++ wait 2173
+++ ps -p 2173 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2175 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2176 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2177 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2178 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2179 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2180 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2181 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 6
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2192
+++ top -d 2 -b -p 2192
+++ pidstat 2 -p 2192
+++ pidstat 2 -d -p 2192
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2192
+++ free -ms 2
+++ vmstat 2
+++ wait 2192
+++ ps -p 2192 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2194 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2195 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2196 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2197 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2198 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2199 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2200 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 7
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2211
+++ top -d 2 -b -p 2211
+++ pidstat 2 -p 2211
+++ pidstat 2 -d -p 2211
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2211
+++ free -ms 2
+++ vmstat 2
+++ ps -p 2211 -o pid,%mem,%cpu
+++ wait 2211
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2213 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2214 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2215 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2216 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2217 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2218 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2219 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 8
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2230
+++ top -d 2 -b -p 2230
+++ pidstat 2 -p 2230
+++ pidstat 2 -d -p 2230
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2230
+++ free -ms 2
+++ vmstat 2
+++ wait 2230
+++ ps -p 2230 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2232 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2233 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2234 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2235 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2236 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2237 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2238 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 9
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ pid=2249
+++ top -d 2 -b -p 2249
+++ pidstat 2 -p 2249
+++ mpstat 2
+++ pidstat 2 -d -p 2249
+++ iostat -t 2
+++ lsof -r 2 -p 2249
+++ free -ms 2
+++ vmstat 2
+++ wait 2249
+++ ps -p 2249 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2251 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2252 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2253 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2254 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2255 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2256 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2257 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_B 10
++ bin/bt-mz.B.x
+++ pid=2268
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 108: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 2268
+++ pidstat 2 -p 2268
+++ pidstat 2 -d -p 2268
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2268
+++ free -ms 2
+++ vmstat 2
+++ ps -p 2268 -o pid,%mem,%cpu
+++ wait 2268
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2270 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2271 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2272 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2273 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2274 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2275 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2276 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class C------------'
+------------Class C------------
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_02_class_C 10
++ bin/bt-mz.C.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 113: bin/bt-mz.C.x: No such file or directory
+++ pid=2287
+++ top -d 2 -b -p 2287
+++ pidstat 2 -p 2287
+++ pidstat 2 -d -p 2287
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2287
+++ free -ms 2
+++ vmstat 2
+++ wait 2287
+++ ps -p 2287 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2289 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2290 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2291 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2292 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2293 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2294 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2295 Terminated              vmstat 2 > $1_vmstat_$2
++ cp config/makeo3.def config/make.def
++ make bt-mz CLASS=W
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=W VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz W
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O3 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.W.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=A
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=A VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz A
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O3 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.A.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=B
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=B VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz B
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O3 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.B.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ make bt-mz CLASS=C
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      Serial Multi-Zone Versions         =
+   =      F77                                =
+   ===========================================
+
+cd BT-MZ; make CLASS=C VERSION=
+make[1]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/sys'
+../sys/setparams bt-mz C
+make[2]: Entering directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+gfortran -c  -O3 bt.f
+/share/apps/gcc/7.2.0/libexec/gcc/x86_64-pc-linux-gnu/7.2.0/f951: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+make[2]: *** [bt.o] Error 1
+make[2]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make[1]: *** [../bin/bt-mz.C.x] Error 2
+make[1]: Leaving directory `/home/a76387/ESC/TP1/NPB3.3-MZ-SER/BT-MZ'
+make: *** [bt-mz] Error 2
++ echo O3
+O3
++ echo '------------Class W------------'
+------------Class W------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 1
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2356
+++ top -d 2 -b -p 2356
+++ pidstat 2 -p 2356
+++ pidstat 2 -d -p 2356
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2356
+++ free -ms 2
+++ vmstat 2
+++ wait 2356
+++ ps -p 2356 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2358 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2359 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2360 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2361 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2362 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2363 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2364 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 2
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2375
+++ top -d 2 -b -p 2375
+++ pidstat 2 -p 2375
+++ mpstat 2
+++ pidstat 2 -d -p 2375
+++ iostat -t 2
+++ lsof -r 2 -p 2375
+++ free -ms 2
+++ vmstat 2
+++ wait 2375
+++ ps -p 2375 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2443 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2444 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2445 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2446 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2447 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2448 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2449 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 3
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2460
+++ top -d 2 -b -p 2460
+++ pidstat 2 -p 2460
+++ pidstat 2 -d -p 2460
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2460
+++ free -ms 2
+++ vmstat 2
+++ wait 2460
+++ ps -p 2460 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2462 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2463 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2464 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2465 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2466 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2467 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2468 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 4
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2480
+++ top -d 2 -b -p 2480
+++ pidstat 2 -p 2480
+++ pidstat 2 -d -p 2480
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2480
+++ free -ms 2
+++ vmstat 2
+++ wait 2480
+++ ps -p 2480 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2482 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2483 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2484 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2485 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2486 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2487 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2488 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 5
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2499
+++ top -d 2 -b -p 2499
+++ pidstat 2 -p 2499
+++ pidstat 2 -d -p 2499
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2499
+++ free -ms 2
+++ vmstat 2
+++ wait 2499
+++ ps -p 2499 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2501 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2502 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2503 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2504 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2505 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2506 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2507 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 6
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2518
+++ top -d 2 -b -p 2518
+++ pidstat 2 -p 2518
+++ pidstat 2 -d -p 2518
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2518
+++ free -ms 2
+++ vmstat 2
+++ wait 2518
+++ ps -p 2518 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2520 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2521 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2522 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2523 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2524 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2525 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2526 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 7
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2537
+++ top -d 2 -b -p 2537
+++ pidstat 2 -p 2537
+++ pidstat 2 -d -p 2537
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2537
+++ free -ms 2
+++ vmstat 2
+++ ps -p 2537 -o pid,%mem,%cpu
+++ wait 2537
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2539 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2540 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2541 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2542 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2543 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2544 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2545 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 8
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2556
+++ top -d 2 -b -p 2556
+++ pidstat 2 -p 2556
+++ pidstat 2 -d -p 2556
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2556
+++ free -ms 2
+++ vmstat 2
+++ wait 2556
+++ ps -p 2556 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2558 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2559 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2560 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2561 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2562 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2563 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2564 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 9
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2575
+++ top -d 2 -b -p 2575
+++ pidstat 2 -p 2575
+++ pidstat 2 -d -p 2575
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2575
+++ free -ms 2
+++ vmstat 2
+++ wait 2575
+++ ps -p 2575 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2577 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2578 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2579 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2580 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2581 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2582 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2583 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_W 10
++ bin/bt-mz.W.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 127: bin/bt-mz.W.x: No such file or directory
+++ pid=2594
+++ top -d 2 -b -p 2594
+++ pidstat 2 -p 2594
+++ pidstat 2 -d -p 2594
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2594
+++ free -ms 2
+++ vmstat 2
+++ wait 2594
+++ ps -p 2594 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2596 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2597 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2598 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2599 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2600 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2601 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2602 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class A------------'
+------------Class A------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 1
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2613
+++ top -d 2 -b -p 2613
+++ pidstat 2 -p 2613
+++ pidstat 2 -d -p 2613
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2613
+++ free -ms 2
+++ vmstat 2
+++ wait 2613
+++ ps -p 2613 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2615 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2616 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2617 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2618 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2619 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2620 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2621 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 2
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2632
+++ top -d 2 -b -p 2632
+++ pidstat 2 -p 2632
+++ pidstat 2 -d -p 2632
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2632
+++ free -ms 2
+++ wait 2632
+++ ps -p 2632 -o pid,%mem,%cpu
+++ vmstat 2
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2634 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2635 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2636 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2637 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2638 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2639 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2640 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 3
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2651
+++ top -d 2 -b -p 2651
+++ pidstat 2 -p 2651
+++ pidstat 2 -d -p 2651
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2651
+++ free -ms 2
+++ vmstat 2
+++ wait 2651
+++ ps -p 2651 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2653 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2654 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2655 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2656 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2657 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2658 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2659 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 4
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2670
+++ top -d 2 -b -p 2670
+++ pidstat 2 -p 2670
+++ pidstat 2 -d -p 2670
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2670
+++ free -ms 2
+++ vmstat 2
+++ wait 2670
+++ ps -p 2670 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2672 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2673 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2674 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2675 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2676 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2677 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2678 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 5
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2689
+++ top -d 2 -b -p 2689
+++ pidstat 2 -p 2689
+++ pidstat 2 -d -p 2689
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2689
+++ free -ms 2
+++ vmstat 2
+++ wait 2689
+++ pkill top
+++ ps -p 2689 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2691 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2692 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2693 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2694 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2695 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2696 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2697 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 6
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2708
+++ top -d 2 -b -p 2708
+++ pidstat 2 -p 2708
+++ pidstat 2 -d -p 2708
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2708
+++ free -ms 2
+++ vmstat 2
+++ wait 2708
+++ ps -p 2708 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2710 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2711 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2712 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2713 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2714 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2715 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2716 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 7
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2727
+++ top -d 2 -b -p 2727
+++ pidstat 2 -p 2727
+++ pidstat 2 -d -p 2727
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2727
+++ wait 2727
+++ vmstat 2
+++ ps -p 2727 -o pid,%mem,%cpu
+++ pkill top
+++ free -ms 2
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2729 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2730 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2731 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2732 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2733 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2734 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2735 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 8
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2746
+++ top -d 2 -b -p 2746
+++ pidstat 2 -p 2746
+++ pidstat 2 -d -p 2746
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2746
+++ free -ms 2
+++ vmstat 2
+++ wait 2746
+++ pkill top
+++ ps -p 2746 -o pid,%mem,%cpu
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2748 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2749 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2750 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2751 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2752 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2753 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2754 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 9
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2765
+++ top -d 2 -b -p 2765
+++ pidstat 2 -p 2765
+++ pidstat 2 -d -p 2765
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2765
+++ free -ms 2
+++ vmstat 2
+++ wait 2765
+++ ps -p 2765 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2767 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2768 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2769 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2770 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2771 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2772 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2773 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_A 10
++ bin/bt-mz.A.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 134: bin/bt-mz.A.x: No such file or directory
+++ pid=2784
+++ top -d 2 -b -p 2784
+++ pidstat 2 -p 2784
+++ pidstat 2 -d -p 2784
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2784
+++ free -ms 2
+++ vmstat 2
+++ wait 2784
+++ ps -p 2784 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2786 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2787 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2788 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2789 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2790 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2791 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2792 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class B------------'
+------------Class B------------
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 1
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2803
+++ top -d 2 -b -p 2803
+++ pidstat 2 -p 2803
+++ pidstat 2 -d -p 2803
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2803
+++ free -ms 2
+++ vmstat 2
+++ wait 2803
+++ ps -p 2803 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2805 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2806 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2807 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2808 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2809 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2810 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2811 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 2
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2822
+++ top -d 2 -b -p 2822
+++ pidstat 2 -p 2822
+++ pidstat 2 -d -p 2822
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2822
+++ free -ms 2
+++ vmstat 2
+++ wait 2822
+++ ps -p 2822 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2824 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2825 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2826 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2827 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2828 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2829 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2830 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 3
++ bin/bt-mz.B.x
+++ pid=2841
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ top -d 2 -b -p 2841
+++ pidstat 2 -p 2841
+++ pidstat 2 -d -p 2841
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2841
+++ vmstat 2
+++ wait 2841
+++ pkill top
+++ ps -p 2841 -o pid,%mem,%cpu
+++ free -ms 2
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2843 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2844 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2845 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2846 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2847 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2848 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2849 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 4
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2860
+++ top -d 2 -b -p 2860
+++ pidstat 2 -p 2860
+++ pidstat 2 -d -p 2860
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2860
+++ free -ms 2
+++ vmstat 2
+++ wait 2860
+++ ps -p 2860 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2862 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2863 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2864 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2865 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2866 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2868 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2900 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 5
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2913
+++ top -d 2 -b -p 2913
+++ pidstat 2 -p 2913
+++ pidstat 2 -d -p 2913
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2913
+++ free -ms 2
+++ vmstat 2
+++ wait 2913
+++ ps -p 2913 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2916 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2917 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2918 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2951 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2952 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2953 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2955 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 6
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2966
+++ top -d 2 -b -p 2966
+++ pidstat 2 -p 2966
+++ pidstat 2 -d -p 2966
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2966
+++ free -ms 2
+++ vmstat 2
+++ ps -p 2966 -o pid,%mem,%cpu
+++ wait 2966
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2968 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2969 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2971 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2972 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2973 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2974 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2975 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 7
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=2986
+++ top -d 2 -b -p 2986
+++ pidstat 2 -p 2986
+++ pidstat 2 -d -p 2986
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 2986
+++ free -ms 2
+++ vmstat 2
+++ wait 2986
+++ ps -p 2986 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  2988 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  2989 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  2990 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  2991 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  2992 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  2993 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  2994 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 8
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=3005
+++ top -d 2 -b -p 3005
+++ pidstat 2 -p 3005
+++ pidstat 2 -d -p 3005
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 3005
+++ free -ms 2
+++ vmstat 2
+++ wait 3005
+++ ps -p 3005 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  3007 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  3008 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  3009 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  3010 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  3011 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  3012 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  3013 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 9
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=3024
+++ top -d 2 -b -p 3024
+++ pidstat 2 -p 3024
+++ pidstat 2 -d -p 3024
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 3024
+++ free -ms 2
+++ vmstat 2
+++ wait 3024
+++ ps -p 3024 -o pid,%mem,%cpu
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  3026 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  3027 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  3028 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  3029 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  3030 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  3031 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  3032 Terminated              vmstat 2 > $1_vmstat_$2
++ for i in '{1..10}'
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_B 10
++ bin/bt-mz.B.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 141: bin/bt-mz.B.x: No such file or directory
+++ pid=3043
+++ top -d 2 -b -p 3043
+++ pidstat 2 -p 3043
+++ pidstat 2 -d -p 3043
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 3043
+++ free -ms 2
+++ vmstat 2
+++ ps -p 3043 -o pid,%mem,%cpu
+++ wait 3043
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  3045 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  3046 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  3047 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  3048 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  3049 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  3050 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  3051 Terminated              vmstat 2 > $1_vmstat_$2
++ echo '------------Class C------------'
+------------Class C------------
++ source ../scripts_ex2/Sequencial/commands.sh ../scripts_ex2/Sequencial/commands_output/run_641_gcc7.2.0_03_class_C 10
++ bin/bt-mz.C.x
+/var/spool/torque/mom_priv/jobs/716117.search6.di.uminho.pt.SC: line 146: bin/bt-mz.C.x: No such file or directory
+++ pid=3062
+++ top -d 2 -b -p 3062
+++ pidstat 2 -p 3062
+++ pidstat 2 -d -p 3062
+++ mpstat 2
+++ iostat -t 2
+++ lsof -r 2 -p 3062
+++ free -ms 2
+++ vmstat 2
+++ ps -p 3062 -o pid,%mem,%cpu
+++ wait 3062
+++ pkill top
+++ pkill pidstat
+++ pkill mpstat
+../scripts_ex2/Sequencial/commands.sh: line 16:  3064 Terminated              pidstat 2 -p $pid > $1_pidstat_$2
+../scripts_ex2/Sequencial/commands.sh: line 16:  3065 Terminated              pidstat 2 -d -p $pid > $1_pidstat_d_$2
+++ pkill iostat
+../scripts_ex2/Sequencial/commands.sh: line 17:  3066 Terminated              mpstat 2 > $1_mpstat_$2
+++ pkill lsof
+../scripts_ex2/Sequencial/commands.sh: line 18:  3067 Terminated              iostat -t 2 > $1_iostat_$2
+++ pkill free
+../scripts_ex2/Sequencial/commands.sh: line 19:  3069 Terminated              lsof -r 2 -p $pid > $1_lsof_$2
+++ pkill vmstat
+../scripts_ex2/Sequencial/commands.sh: line 20:  3070 Terminated              free -ms 2 > $1_free_$2
+++ pkill ps
+pkill: 517 - Operation not permitted
+../scripts_ex2/Sequencial/commands.sh: line 21:  3071 Terminated              vmstat 2 > $1_vmstat_$2

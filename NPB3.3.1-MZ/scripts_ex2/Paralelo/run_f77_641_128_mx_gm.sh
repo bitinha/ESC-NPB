@@ -25,27 +25,27 @@ echo '------------Class W------------'
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.W.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_W $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_W $i bt-mz.W.64
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.A.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_A $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_A $i bt-mz.A.64
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.B.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_B $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_B $i bt-mz.B.64
 done
 echo '------------Class C------------'
 
 
 mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.C.64 &
-source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_C $i
+source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_00_class_C $i bt-mz.C.64
 
 
 cp config/makeo1.def config/make.def
@@ -59,27 +59,27 @@ echo '------------Class W------------'
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.W.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_W $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_W $i bt-mz.W.64
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.A.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_A $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_A $i bt-mz.A.64
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.B.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_B $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_B $i bt-mz.B.64
 done
 echo '------------Class C------------'
 
 
 mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.C.64 &
-source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_C $i
+source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_01_class_C $i bt-mz.C.64
 
 
 cp config/makeo2.def config/make.def
@@ -93,26 +93,26 @@ echo '------------Class W------------'
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.W.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_W $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_W $i bt-mz.W.64
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.A.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_A $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_A $i bt-mz.A.64
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.B.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_B $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_B $i bt-mz.B.64
 done
 echo '------------Class C------------'
 
 mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.C.64 &
-source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_C $i
+source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_02_class_C $i bt-mz.C.64
 
 
 cp config/makeo3.def config/make.def
@@ -126,23 +126,23 @@ echo '------------Class W------------'
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.W.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_W $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_W $i bt-mz.W.64
 done
 echo '------------Class A------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.A.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_A $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_A $i bt-mz.A.64
 done
 echo '------------Class B------------'
 
 for i in {1..10}
 do
     mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.B.64 &
-    source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_B $i
+    source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_B $i bt-mz.B.64
 done
 echo '------------Class C------------'
 
 mpirun -np 64 --map-by ppr:1:core -mca btl self,sm bin/bt-mz.C.64 &
-source ../scripts_ex2/Sequencial/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_C $i
+source ../scripts_ex2/Paralelo/commands.sh $commands_output_dir/run_f77_641_128_mx_gm_03_class_C $i bt-mz.C.64
