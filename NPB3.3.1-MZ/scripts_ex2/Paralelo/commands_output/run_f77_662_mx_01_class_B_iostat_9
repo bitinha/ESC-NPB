@@ -1,0 +1,51 @@
+Linux 2.6.32-279.14.1.el6.x86_64 (compute-662-5.local) 	04/21/20 	_x86_64_	(48 CPU)
+
+04/21/20 02:18:42
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          65.24    0.00    0.50    0.01    0.00   34.25
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               6.31         0.38       135.86    3331586 1203667948
+
+04/21/20 02:18:44
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          70.36    0.00    3.65    0.00    0.00   25.99
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:18:46
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.79    0.00    0.20    0.00    0.00   14.01
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               6.50         0.00        52.00          0        104
+
+04/21/20 02:18:48
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.89    0.00    0.19    0.00    0.00   13.92
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              17.00         0.00       204.00          0        408
+
+04/21/20 02:18:50
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.05    0.00    0.19    0.00    0.00   13.76
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:18:52
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.04    0.00    0.20    0.00    0.00   13.76
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               1.50         0.00        12.00          0         24
+
+04/21/20 02:18:54
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.80    0.00    0.19    0.00    0.00   14.01
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+

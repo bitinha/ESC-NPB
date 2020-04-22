@@ -1,0 +1,12 @@
+  PID %MEM %CPU COMMAND
+28393  0.0  0.3 -bash
+28464  0.0  0.0 /bin/sh /var/spool/torque/mom_priv/jobs/716706.search6.di.uminho.pt.SC
+28709  0.0  3.0 mpirun -np 24 bin/bt-mz.W.24
+28715  0.0  0.0 /bin/sh /var/spool/torque/mom_priv/jobs/716706.search6.di.uminho.pt.SC
+28717  0.0  4.0 pidstat 2
+28719  0.0  4.0 pidstat 2 -d
+28720  0.0  0.0 mpstat 2
+28721  0.0  0.0 iostat -t 2
+28723  0.0  0.0 free -ms 2
+28724  0.0  0.0 vmstat 2
+28726  0.0  4.0 ps -o pid,%mem,%cpu,args

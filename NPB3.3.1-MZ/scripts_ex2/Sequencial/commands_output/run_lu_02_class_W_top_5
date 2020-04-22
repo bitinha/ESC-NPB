@@ -1,0 +1,39 @@
+top - 19:29:13 up 109 days,  2:47,  0 users,  load average: 1.05, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  5.3%us,  0.5%sy,  0.0%ni, 94.1%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1503628k used, 64564960k free,   136248k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   325520k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+ 8586 a76387    20   0 19848 6088  904 R 99.7  0.0   0:00.50 lu-mz.W.x          
+
+
+top - 19:29:15 up 109 days,  2:47,  0 users,  load average: 1.05, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1502868k used, 64565720k free,   136248k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   325556k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+ 8586 a76387    20   0 19848 6096  912 R 99.4  0.0   0:02.49 lu-mz.W.x          
+
+
+top - 19:29:17 up 109 days,  2:47,  0 users,  load average: 1.05, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1502864k used, 64565724k free,   136248k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   325560k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+ 8586 a76387    20   0 19848 6096  912 R 99.9  0.0   0:04.49 lu-mz.W.x          
+
+
+top - 19:29:19 up 109 days,  2:47,  0 users,  load average: 1.05, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.6%id,  0.2%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1501928k used, 64566660k free,   136248k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   325560k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+ 8586 a76387    20   0 19848 6096  912 R 99.9  0.0   0:06.49 lu-mz.W.x          
+

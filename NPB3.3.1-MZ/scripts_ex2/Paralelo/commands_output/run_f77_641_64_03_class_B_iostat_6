@@ -1,0 +1,51 @@
+Linux 2.6.32-279.14.1.el6.x86_64 (compute-641-14.local) 	04/21/20 	_x86_64_	(32 CPU)
+
+04/21/20 02:38:53
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          37.53    0.00    2.47    0.00    0.00   59.99
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.64         0.17        87.73    1735834  875999705
+
+04/21/20 02:38:55
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          51.94    0.00   12.52    0.00    0.00   35.54
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              15.50         0.00       124.00          0        248
+
+04/21/20 02:38:57
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.43    0.00   10.73    0.00    0.00   19.84
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              16.50         0.00       132.00          0        264
+
+04/21/20 02:38:59
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.52    0.00   10.71    0.00    0.00   19.77
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:39:01
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.90    0.00   10.65    0.00    0.00   19.45
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               1.50         0.00        12.00          0         24
+
+04/21/20 02:39:03
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.42    0.00   10.76    0.00    0.00   19.82
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.00         0.00        16.00          0         32
+
+04/21/20 02:39:05
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.47    0.00   10.77    0.00    0.00   19.76
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              20.00         0.00       200.00          0        400
+

@@ -1,0 +1,51 @@
+Linux 2.6.32-279.14.1.el6.x86_64 (compute-641-14.local) 	04/21/20 	_x86_64_	(32 CPU)
+
+04/21/20 02:21:46
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          37.53    0.00    2.47    0.00    0.00   60.00
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.64         0.17        87.71    1735834  875747425
+
+04/21/20 02:21:48
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          52.47    0.00   12.24    0.00    0.00   35.29
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              16.50         0.00       132.00          0        264
+
+04/21/20 02:21:50
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          68.60    0.00   11.35    0.00    0.00   20.05
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               9.00         0.00        72.00          0        144
+
+04/21/20 02:21:52
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          68.91    0.00   11.24    0.00    0.00   19.85
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:21:54
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          69.08    0.00   11.37    0.00    0.00   19.55
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               1.50         0.00        12.00          0         24
+
+04/21/20 02:21:56
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          65.97    0.00   12.34    0.00    0.00   21.69
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.00         0.00        16.00          0         32
+
+04/21/20 02:21:58
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          68.57    0.00   11.55    0.00    0.00   19.88
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               1.50         0.00        12.00          0         24
+

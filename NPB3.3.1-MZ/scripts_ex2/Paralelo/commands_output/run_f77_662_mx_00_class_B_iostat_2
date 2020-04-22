@@ -1,0 +1,184 @@
+Linux 2.6.32-279.14.1.el6.x86_64 (compute-662-5.local) 	04/21/20 	_x86_64_	(48 CPU)
+
+04/21/20 02:06:44
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          65.24    0.00    0.50    0.01    0.00   34.25
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               6.31         0.38       135.83    3331586 1203309020
+
+04/21/20 02:06:46
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           4.51    0.00    3.15    0.00    0.00   92.34
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               3.00         0.00        24.00          0         48
+
+04/21/20 02:06:48
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.24    0.00    0.35    0.00    0.00   13.41
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:06:50
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.85    0.00    0.16    0.01    0.00   12.98
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              24.50         0.00       276.00          0        552
+
+04/21/20 02:06:52
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.16    0.00    0.15    0.00    0.00   13.69
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:06:54
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.90    0.00    0.16    0.00    0.00   13.94
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:06:56
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.87    0.00    0.17    0.00    0.00   12.96
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:06:58
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.34    0.00    0.16    0.00    0.00   14.50
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.00         0.00        16.00          0         32
+
+04/21/20 02:07:00
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.80    0.00    0.17    0.00    0.00   13.03
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:02
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.76    0.00    0.14    0.00    0.00   14.11
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              19.00         0.00       208.00          0        416
+
+04/21/20 02:07:04
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.26    0.00    0.18    0.00    0.00   13.57
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:06
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.67    0.00    0.18    0.00    0.00   13.16
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               3.50         0.00        28.00          0         56
+
+04/21/20 02:07:08
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.34    0.00    0.15    0.00    0.00   14.51
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:10
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.81    0.00    0.18    0.00    0.00   13.01
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:12
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.43    0.00    0.17    0.00    0.00   14.40
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:14
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.66    0.00    0.17    0.00    0.00   13.17
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:16
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.39    0.00    0.17    0.00    0.00   13.44
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               3.50         0.00        28.00          0         56
+
+04/21/20 02:07:18
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.81    0.00    0.17    0.00    0.00   14.02
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:20
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          87.04    0.00    0.18    0.00    0.00   12.78
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:22
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.29    0.00    0.24    0.01    0.00   14.46
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda             362.00         0.00     12260.00          0      24520
+
+04/21/20 02:07:24
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.75    0.00    0.18    0.00    0.00   13.08
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:26
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.63    0.00    0.17    0.00    0.00   14.20
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               2.00         0.00        16.00          0         32
+
+04/21/20 02:07:28
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.61    0.00    0.18    0.00    0.00   13.21
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda              77.00         0.00      2672.00          0       5344
+
+04/21/20 02:07:30
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          86.45    0.00    0.15    0.00    0.00   13.40
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:32
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          85.82    0.00    0.17    0.00    0.00   14.01
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               0.00         0.00         0.00          0          0
+
+04/21/20 02:07:34
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          81.59    0.00    0.25    0.00    0.00   18.16
+
+Device:            tps   Blk_read/s   Blk_wrtn/s   Blk_read   Blk_wrtn
+sda               4.50         0.00        36.00          0         72
+

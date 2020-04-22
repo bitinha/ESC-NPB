@@ -1,0 +1,525 @@
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======
+COMMAND    PID   USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+lu-mz.A.x 5200 a76387  cwd    DIR   0,21     4096 40624495 /home/a76387/ESC/TP1/NPB3.3-MZ-SER (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  rtd    DIR    8,1     4096        2 /
+lu-mz.A.x 5200 a76387  txt    REG   0,21    86139 40533030 /home/a76387/ESC/TP1/NPB3.3-MZ-SER/bin/lu-mz.A.x (nas-1-1.local:/storage/local/d7/v1p1/acomp-home/a76387)
+lu-mz.A.x 5200 a76387  mem    REG    8,1   156872   691070 /lib64/ld-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1  1922112   691071 /lib64/libc-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG    8,1   598800   655470 /lib64/libm-2.12.so
+lu-mz.A.x 5200 a76387  mem    REG   0,22  5450945 54136780 /share/apps/gcc/5.3.0/lib64/libgfortran.so.3.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   529980 54136777 /share/apps/gcc/5.3.0/lib64/libgcc_s.so.1 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387  mem    REG   0,22   931674 54136797 /share/apps/gcc/5.3.0/lib64/libquadmath.so.0.0.0 (nas-1-1:/storage/local/d2/v0p1/)
+lu-mz.A.x 5200 a76387    0r   CHR    1,3      0t0     3925 /dev/null
+lu-mz.A.x 5200 a76387    1w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387    2w   REG    8,2   205204   129086 /var/spool/torque/spool/716499.search6.di.uminho.pt.OU
+lu-mz.A.x 5200 a76387   17w  FIFO    0,8      0t0 51056153 pipe
+=======

@@ -1,0 +1,349 @@
+top - 21:07:35 up 109 days,  4:25,  0 users,  load average: 1.00, 1.00, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  5.3%us,  0.5%sy,  0.0%ni, 94.1%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1543932k used, 64524656k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   334996k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  932 R 97.8  0.1   0:00.49 lu-mz.A.x          
+
+
+top - 21:07:37 up 109 days,  4:25,  0 users,  load average: 1.00, 1.00, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1544808k used, 64523780k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335028k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  932 R 99.9  0.1   0:02.49 lu-mz.A.x          
+
+
+top - 21:07:39 up 109 days,  4:25,  0 users,  load average: 1.00, 1.00, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1544188k used, 64524400k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335028k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  932 R 99.9  0.1   0:04.49 lu-mz.A.x          
+
+
+top - 21:07:41 up 109 days,  4:25,  0 users,  load average: 1.00, 1.00, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.6%id,  0.2%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1543560k used, 64525028k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335032k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:06.49 lu-mz.A.x          
+
+
+top - 21:07:43 up 109 days,  4:25,  0 users,  load average: 1.08, 1.02, 1.01
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1542612k used, 64525976k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335032k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:08.49 lu-mz.A.x          
+
+
+top - 21:07:45 up 109 days,  4:25,  0 users,  load average: 1.08, 1.02, 1.01
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1542240k used, 64526348k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335032k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:10.49 lu-mz.A.x          
+
+
+top - 21:07:47 up 109 days,  4:26,  0 users,  load average: 1.08, 1.02, 1.01
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1542072k used, 64526516k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335036k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.4  0.1   0:12.48 lu-mz.A.x          
+
+
+top - 21:07:49 up 109 days,  4:26,  0 users,  load average: 1.07, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1541404k used, 64527184k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335036k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:14.48 lu-mz.A.x          
+
+
+top - 21:07:51 up 109 days,  4:26,  0 users,  load average: 1.07, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1541140k used, 64527448k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335040k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:16.48 lu-mz.A.x          
+
+
+top - 21:07:53 up 109 days,  4:26,  0 users,  load average: 1.07, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1541128k used, 64527460k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335044k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:18.48 lu-mz.A.x          
+
+
+top - 21:07:55 up 109 days,  4:26,  0 users,  load average: 1.07, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540864k used, 64527724k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335044k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:20.48 lu-mz.A.x          
+
+
+top - 21:07:57 up 109 days,  4:26,  0 users,  load average: 1.07, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540856k used, 64527732k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335044k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:22.48 lu-mz.A.x          
+
+
+top - 21:07:59 up 109 days,  4:26,  0 users,  load average: 1.06, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540980k used, 64527608k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335048k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.4  0.1   0:24.47 lu-mz.A.x          
+
+
+top - 21:08:01 up 109 days,  4:26,  0 users,  load average: 1.06, 1.02, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540624k used, 64527964k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335048k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:26.47 lu-mz.A.x          
+
+
+top - 21:08:03 up 109 days,  4:26,  0 users,  load average: 1.06, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.9%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540616k used, 64527972k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335052k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:28.47 lu-mz.A.x          
+
+
+top - 21:08:05 up 109 days,  4:26,  0 users,  load average: 1.06, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540500k used, 64528088k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335056k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:30.47 lu-mz.A.x          
+
+
+top - 21:08:07 up 109 days,  4:26,  0 users,  load average: 1.06, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540436k used, 64528152k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335060k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:32.47 lu-mz.A.x          
+
+
+top - 21:08:09 up 109 days,  4:26,  0 users,  load average: 1.05, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540428k used, 64528160k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335068k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:34.47 lu-mz.A.x          
+
+
+top - 21:08:11 up 109 days,  4:26,  0 users,  load average: 1.05, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.1%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540560k used, 64528028k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335068k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.4  0.1   0:36.46 lu-mz.A.x          
+
+
+top - 21:08:13 up 109 days,  4:26,  0 users,  load average: 1.05, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.7%id,  0.1%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540684k used, 64527904k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335068k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:38.46 lu-mz.A.x          
+
+
+top - 21:08:15 up 109 days,  4:26,  0 users,  load average: 1.05, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540552k used, 64528036k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335072k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:40.46 lu-mz.A.x          
+
+
+top - 21:08:17 up 109 days,  4:26,  0 users,  load average: 1.05, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540552k used, 64528036k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335072k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:42.46 lu-mz.A.x          
+
+
+top - 21:08:19 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540676k used, 64527912k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335072k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:44.46 lu-mz.A.x          
+
+
+top - 21:08:21 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540560k used, 64528028k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335080k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:46.46 lu-mz.A.x          
+
+
+top - 21:08:23 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540556k used, 64528032k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335080k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.4  0.1   0:48.45 lu-mz.A.x          
+
+
+top - 21:08:25 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540556k used, 64528032k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335084k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:50.45 lu-mz.A.x          
+
+
+top - 21:08:27 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540548k used, 64528040k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335084k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:52.45 lu-mz.A.x          
+
+
+top - 21:08:29 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540416k used, 64528172k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335084k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:54.45 lu-mz.A.x          
+
+
+top - 21:08:31 up 109 days,  4:26,  0 users,  load average: 1.04, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540548k used, 64528040k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335088k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:56.45 lu-mz.A.x          
+
+
+top - 21:08:33 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540548k used, 64528040k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335088k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   0:58.45 lu-mz.A.x          
+
+
+top - 21:08:35 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540424k used, 64528164k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335092k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.4  0.1   1:00.44 lu-mz.A.x          
+
+
+top - 21:08:37 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540672k used, 64527916k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335100k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   1:02.44 lu-mz.A.x          
+
+
+top - 21:08:39 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1540548k used, 64528040k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335100k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   1:04.44 lu-mz.A.x          
+
+
+top - 21:08:41 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1541928k used, 64526660k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335100k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   1:06.44 lu-mz.A.x          
+
+
+top - 21:08:43 up 109 days,  4:26,  0 users,  load average: 1.03, 1.01, 1.00
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.1%us,  0.1%sy,  0.0%ni, 97.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  66068588k total,  1541936k used, 64526652k free,   136288k buffers
+Swap:  1023992k total,    11032k used,  1012960k free,   335104k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
+12838 a76387    20   0 53772  39m  940 R 99.9  0.1   1:08.44 lu-mz.A.x          
+
