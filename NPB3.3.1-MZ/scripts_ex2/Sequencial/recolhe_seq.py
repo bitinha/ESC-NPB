@@ -257,13 +257,13 @@ for lista in resultados.values():
     elif Class == "C":
         x = 3
 
-    if fflags == "-O0 -fopenmp":
+    if fflags == "-O0":
         y = 0
-    elif fflags == "-O1 -fopenmp":
+    elif fflags == "-O1":
         y = 1
-    elif fflags == "-O2 -fopenmp":
+    elif fflags == "-O2":
         y = 2
-    elif fflags == "-O3 -fopenmp":
+    elif fflags == "-O3":
         y = 3
 
     if command == 'top':
