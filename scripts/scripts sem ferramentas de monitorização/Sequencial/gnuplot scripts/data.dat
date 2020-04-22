@@ -1,0 +1,16 @@
+0 0 22.664 -O0 W gfortran
+1 0 167.422 -O0 A gfortran
+2 0 649.948 -O0 B gfortran
+3 0 2799.16 -O0 C gfortran
+0 1 9.968 -O1 W gfortran
+1 1 86.156 -O1 A gfortran
+2 1 365.47 -O1 B gfortran
+3 1 1356.1 -O1 C gfortran
+0 2 8.394 -O2 W gfortran
+1 2 70.212 -O2 A gfortran
+2 2 306.282 -O2 B gfortran
+3 2 1324.94 -O2 C gfortran
+0 3 7.664 -O3 W gfortran
+1 3 71.07 -O3 A gfortran
+2 3 309.242 -O3 B gfortran
+3 3 1339.6 -O3 C gfortran

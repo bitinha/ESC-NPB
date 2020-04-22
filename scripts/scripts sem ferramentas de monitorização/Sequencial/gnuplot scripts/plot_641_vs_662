@@ -1,0 +1,15 @@
+set xtics ("W" 0.33, "A" 2.33, "B" 4.33, "C" 6.33,)
+set xlabel "Class"
+set ylabel "Execution Time (seconds)"
+set key top left
+set boxwidth 0.33
+set style fill solid
+set logscale y
+set title "Comparison of execution times of different nodes \n for the sequential bt-mz benchmark with gnu compiler and O3 flag"
+
+plot 'f77641.dat' using ($1*2):(stringcolumn(4) eq "-O3"? $3:1/0) title "node 641" with boxes ls 1,\
+     'bt.dat' using ($1*2+0.33):(stringcolumn(4) eq "-O3"? $3:1/0) title "node 662" with boxes ls 2,\
+     '421.dat' using ($1*2+0.66):(stringcolumn(4) eq "-O3"? $3:1/0) title "node 421" with boxes ls 3
+
+
+pause -1 "Hit any key to continue"

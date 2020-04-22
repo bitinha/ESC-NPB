@@ -1,0 +1,1102 @@
++ export OMP_NUM_THREADS=2
++ OMP_NUM_THREADS=2
++ cp config/makeo3.def config/make.def
++ make lu-mz CLASS=B NPROCS=1
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd LU-MZ; make CLASS=B NPROCS=1 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams lu-mz 1 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+mpif77 -c  -O3 -fopenmp lu.f
+mpif77 -c  -O3 -fopenmp read_input.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -c  -O3 -fopenmp setcoeff.f
+mpif77 -c  -O3 -fopenmp setbv.f
+mpif77 -c  -O3 -fopenmp exact.f
+mpif77 -c  -O3 -fopenmp setiv.f
+mpif77 -c  -O3 -fopenmp erhs.f
+mpif77 -c  -O3 -fopenmp ssor.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp jacld.f
+mpif77 -c  -O3 -fopenmp jacu.f
+mpif77 -c  -O3 -fopenmp pintgr.f
+mpif77 -c  -O3 -fopenmp verify.f
+cd ../common; mpif77 -c  -O3 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O3 -fopenmp timers.f
+mpif77 -O3 -fopenmp -o ../bin/lu-mz.B.1 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
++ make lu-mz CLASS=B NPROCS=2
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd LU-MZ; make CLASS=B NPROCS=2 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams lu-mz 2 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+mpif77 -c  -O3 -fopenmp lu.f
+mpif77 -c  -O3 -fopenmp read_input.f
+mpif77 -c  -O3 -fopenmp setiv.f
+mpif77 -c  -O3 -fopenmp erhs.f
+mpif77 -c  -O3 -fopenmp ssor.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp rhs.f
+/tmp/cc9Gyiwo.s: Assembler messages:
+/tmp/cc9Gyiwo.s: Fatal error: can't write rhs.o: Stale NFS file handle
+/tmp/cc9Gyiwo.s: Fatal error: can't close rhs.o: Input/output error
+make[2]: *** [rhs.o] Error 1
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[1]: *** [../bin/lu-mz.B.2] Error 2
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make: *** [lu-mz] Error 2
++ make lu-mz CLASS=B NPROCS=4
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd LU-MZ; make CLASS=B NPROCS=4 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams lu-mz 4 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+mpif77 -c  -O3 -fopenmp lu.f
+mpif77 -c  -O3 -fopenmp read_input.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -c  -O3 -fopenmp setcoeff.f
+mpif77 -c  -O3 -fopenmp setbv.f
+mpif77 -c  -O3 -fopenmp exact.f
+mpif77 -c  -O3 -fopenmp setiv.f
+mpif77 -c  -O3 -fopenmp erhs.f
+mpif77 -c  -O3 -fopenmp ssor.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -O3 -fopenmp -o ../bin/lu-mz.B.4 lu.o read_input.o mpi_setup.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o zone_setup.o exch_qbc.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o syncs.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o 
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
++ make lu-mz CLASS=B NPROCS=8
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd LU-MZ; make CLASS=B NPROCS=8 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams lu-mz 8 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+mpif77 -c  -O3 -fopenmp lu.f
+mpif77 -c  -O3 -fopenmp read_input.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -c  -O3 -fopenmp setcoeff.f
+mpif77 -c  -O3 -fopenmp setbv.f
+mpif77 -c  -O3 -fopenmp exact.f
+mpif77 -c  -O3 -fopenmp setiv.f
+/tmp/ccEFdm3G.s: Assembler messages:
+/tmp/ccEFdm3G.s: Fatal error: can't close setiv.o: Input/output error
+make[2]: *** [setiv.o] Error 1
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[1]: *** [../bin/lu-mz.B.8] Error 2
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make: *** [lu-mz] Error 2
++ make lu-mz CLASS=B NPROCS=16
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd LU-MZ; make CLASS=B NPROCS=16 VERSION=
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams lu-mz 16 B
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+mpif77 -c  -O3 -fopenmp lu.f
+/tmp/cclqE7NN.s: Assembler messages:
+/tmp/cclqE7NN.s: Fatal error: can't write lu.o: Stale NFS file handle
+/tmp/cclqE7NN.s: Fatal error: can't close lu.o: Input/output error
+make[2]: *** [lu.o] Error 1
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make[1]: *** [../bin/lu-mz.B.16] Error 2
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/LU-MZ'
+make: *** [lu-mz] Error 2
++ echo O3
+O3
++ echo '------------Class B------------'
+------------Class B------------
++ mpirun -np 1 bin/lu-mz.B.1
+--------------------------------------------------------------------------
+[[64269,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Reading from input file inputlu-mz.data
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+ Number of active processes:     1
+
+ Use the default load factors with threads
+ Total number of threads:      2  (  2.0 threads/process)
+
+ Calculated speedup =      2.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+ FAILURE:  1   0.1184511188231E+08 0.1734656959567E+05 0.6818503939627E+03
+ FAILURE:  2   0.7586176230031E+06 0.1238977748533E+04 0.6112931779052E+03
+ FAILURE:  3   0.2138336675994E+07 0.4123885357100E+04 0.5175247626520E+03
+ FAILURE:  4   0.1782111187906E+07 0.3613705834056E+04 0.4921533638159E+03
+ FAILURE:  5   0.1348111661163E+08 0.3531187871586E+05 0.3807728510031E+03
+ Comparison of RMS-norms of solution error
+ FAILURE:  1   0.8663542612434E+04 0.1781612313296E+04 0.3862754117592E+01
+ FAILURE:  2   0.7517216044437E+03 0.1177971120769E+03 0.5381494343877E+01
+ FAILURE:  3   0.2147713763721E+04 0.4233792871440E+03 0.4072788936390E+01
+ FAILURE:  4   0.1851510543116E+04 0.3577260438230E+03 0.4175777875518E+01
+ FAILURE:  5   0.1476465766950E+05 0.3659958544012E+04 0.3034105165934E+01
+ Comparison of surface integral
+ FAILURE:      0.2693677724077E+05 0.6107041476456E+04 0.3410773587279E+01
+ Verification failed
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                   154.43
+ Total processes =                        1
+ Total threads   =                        2
+ Mop/s total     =                  2907.02
+ Mop/s/thread    =                  1453.51
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+ Myid =    0   num_threads =   2
+  SECTION   Time (secs)
+  total   :  154.426  (100.00%)
+  rhsx    :    5.402  (  3.50%)
+  rhsy    :    7.166  (  4.64%)
+  rhsz    :    7.873  (  5.10%)
+  rhs     :   23.330  ( 15.11%)
+     --> total  sub-rhs:   20.442  ( 13.24%)
+     --> total rest-rhs:    2.888  (  1.87%)
+  jacld   :   18.533  ( 12.00%)
+  blts    :   44.151  ( 28.59%)
+  jacu    :   17.851  ( 11.56%)
+  buts    :   44.024  ( 28.51%)
+  add     :    0.738  (  0.48%)
+  l2norm  :    0.005  (  0.00%)
+  qbc_copy:    0.337  (  0.22%)
+  qbc_comm:    0.000  (  0.00%)
+     --> total exch_qbc:    0.337  (  0.22%)
+
+real	2m36.413s
+user	5m11.026s
+sys	0m0.239s
++ mpirun -np 2 bin/lu-mz.B.2
+--------------------------------------------------------------------------
+[[64307,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+ Requested MPI processes     2 less than the compiled value     4
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD 
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[compute-641-2.local:01638] 1 more process has sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-2.local:01638] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+real	0m0.394s
+user	0m0.195s
+sys	0m0.235s
++ mpirun -np 4 bin/lu-mz.B.4
+--------------------------------------------------------------------------
+[[64315,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Reading from input file inputlu-mz.data
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:      8  (  2.0 threads/process)
+
+ Calculated speedup =      8.00
+
+ Time step    1
+ Time step   20
+[compute-641-2.local:01646] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-2.local:01646] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+ FAILURE:  1   0.1184473169577E+08 0.1734656959567E+05 0.6818284768605E+03
+ FAILURE:  2   0.7586084893667E+06 0.1238977748533E+04 0.6112858059920E+03
+ FAILURE:  3   0.2138300252526E+07 0.4123885357100E+04 0.5175159303336E+03
+ FAILURE:  4   0.1782076749936E+07 0.3613705834056E+04 0.4921438339948E+03
+ FAILURE:  5   0.1348081229495E+08 0.3531187871586E+05 0.3807642330339E+03
+ Comparison of RMS-norms of solution error
+ FAILURE:  1   0.8663512993386E+04 0.1781612313296E+04 0.3862737492737E+01
+ FAILURE:  2   0.7517205528738E+03 0.1177971120769E+03 0.5381485416918E+01
+ FAILURE:  3   0.2147709950236E+04 0.4233792871440E+03 0.4072779929137E+01
+ FAILURE:  4   0.1851507627288E+04 0.3577260438230E+03 0.4175769724512E+01
+ FAILURE:  5   0.1476463489135E+05 0.3659958544012E+04 0.3034098942323E+01
+ Comparison of surface integral
+ FAILURE:      0.2693691993783E+05 0.6107041476456E+04 0.3410796953267E+01
+ Verification failed
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                    38.07
+ Total processes =                        4
+ Total threads   =                        8
+ Mop/s total     =                 11790.96
+ Mop/s/thread    =                  1473.87
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+ Myid =    0   num_threads =   2
+  SECTION   Time (secs)
+  total   :   38.073  (100.00%)
+  rhsx    :    1.307  (  3.43%)
+  rhsy    :    1.729  (  4.54%)
+  rhsz    :    1.908  (  5.01%)
+  rhs     :    5.823  ( 15.29%)
+     --> total  sub-rhs:    4.944  ( 12.99%)
+     --> total rest-rhs:    0.879  (  2.31%)
+  jacld   :    4.622  ( 12.14%)
+  blts    :   10.657  ( 27.99%)
+  jacu    :    4.461  ( 11.72%)
+  buts    :   10.618  ( 27.89%)
+  add     :    0.202  (  0.53%)
+  l2norm  :    0.002  (  0.00%)
+  qbc_copy:    0.083  (  0.22%)
+  qbc_comm:    0.275  (  0.72%)
+     --> total exch_qbc:    0.358  (  0.94%)
+
+ Myid =    1   num_threads =   2
+  SECTION   Time (secs)
+  total   :   38.069  ( 99.99%)
+  rhsx    :    1.268  (  3.33%)
+  rhsy    :    1.680  (  4.41%)
+  rhsz    :    1.856  (  4.88%)
+  rhs     :    5.645  ( 14.83%)
+     --> total  sub-rhs:    4.804  ( 12.62%)
+     --> total rest-rhs:    0.841  (  2.21%)
+  jacld   :    4.498  ( 11.81%)
+  blts    :   10.402  ( 27.32%)
+  jacu    :    4.336  ( 11.39%)
+  buts    :   10.462  ( 27.48%)
+  add     :    0.207  (  0.54%)
+  l2norm  :    0.002  (  0.00%)
+  qbc_copy:    0.077  (  0.20%)
+  qbc_comm:    1.150  (  3.02%)
+     --> total exch_qbc:    1.227  (  3.22%)
+
+ Myid =    2   num_threads =   2
+  SECTION   Time (secs)
+  total   :   38.073  (100.00%)
+  rhsx    :    1.313  (  3.45%)
+  rhsy    :    1.749  (  4.59%)
+  rhsz    :    1.921  (  5.05%)
+  rhs     :    5.844  ( 15.35%)
+     --> total  sub-rhs:    4.984  ( 13.09%)
+     --> total rest-rhs:    0.860  (  2.26%)
+  jacld   :    4.611  ( 12.11%)
+  blts    :   10.670  ( 28.02%)
+  jacu    :    4.435  ( 11.65%)
+  buts    :   10.608  ( 27.86%)
+  add     :    0.195  (  0.51%)
+  l2norm  :    0.002  (  0.00%)
+  qbc_copy:    0.082  (  0.21%)
+  qbc_comm:    0.253  (  0.67%)
+     --> total exch_qbc:    0.335  (  0.88%)
+
+ Myid =    3   num_threads =   2
+  SECTION   Time (secs)
+  total   :   38.068  ( 99.99%)
+  rhsx    :    1.286  (  3.38%)
+  rhsy    :    1.699  (  4.46%)
+  rhsz    :    1.879  (  4.93%)
+  rhs     :    5.675  ( 14.90%)
+     --> total  sub-rhs:    4.864  ( 12.78%)
+     --> total rest-rhs:    0.811  (  2.13%)
+  jacld   :    4.487  ( 11.78%)
+  blts    :   10.397  ( 27.31%)
+  jacu    :    4.316  ( 11.33%)
+  buts    :   10.416  ( 27.36%)
+  add     :    0.181  (  0.48%)
+  l2norm  :    0.002  (  0.00%)
+  qbc_copy:    0.082  (  0.22%)
+  qbc_comm:    1.213  (  3.18%)
+     --> total exch_qbc:    1.295  (  3.40%)
+
+real	0m38.924s
+user	5m4.661s
+sys	0m0.615s
++ mpirun -np 8 bin/lu-mz.B.8
+--------------------------------------------------------------------------
+[[64469,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Reading from input file inputlu-mz.data
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     16  (  2.0 threads/process)
+
+ Calculated speedup =     16.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+[compute-641-2.local:01664] 7 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-2.local:01664] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+ FAILURE:  1   0.1184467892663E+08 0.1734656959567E+05 0.6818254348102E+03
+ FAILURE:  2   0.7586062716212E+06 0.1238977748533E+04 0.6112840160120E+03
+ FAILURE:  3   0.2138291519921E+07 0.4123885357100E+04 0.5175138127663E+03
+ FAILURE:  4   0.1782071272182E+07 0.3613705834056E+04 0.4921423181676E+03
+ FAILURE:  5   0.1348074877595E+08 0.3531187871586E+05 0.3807624342341E+03
+ Comparison of RMS-norms of solution error
+ FAILURE:  1   0.8663491070669E+04 0.1781612313296E+04 0.3862725187750E+01
+ FAILURE:  2   0.7517182994019E+03 0.1177971120769E+03 0.5381466286806E+01
+ FAILURE:  3   0.2147704047391E+04 0.4233792871440E+03 0.4072765986921E+01
+ FAILURE:  4   0.1851502773275E+04 0.3577260438230E+03 0.4175756155432E+01
+ FAILURE:  5   0.1476461097219E+05 0.3659958544012E+04 0.3034092406960E+01
+ Comparison of surface integral
+ FAILURE:      0.2693695650660E+05 0.6107041476456E+04 0.3410802941235E+01
+ Verification failed
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                    21.75
+ Total processes =                        8
+ Total threads   =                       16
+ Mop/s total     =                 20639.44
+ Mop/s/thread    =                  1289.97
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+ Myid =    0   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.751  (100.00%)
+  rhsx    :    0.743  (  3.42%)
+  rhsy    :    1.106  (  5.08%)
+  rhsz    :    1.240  (  5.70%)
+  rhs     :    4.067  ( 18.70%)
+     --> total  sub-rhs:    3.088  ( 14.20%)
+     --> total rest-rhs:    0.979  (  4.50%)
+  jacld   :    2.556  ( 11.75%)
+  blts    :    5.669  ( 26.06%)
+  jacu    :    2.519  ( 11.58%)
+  buts    :    5.662  ( 26.03%)
+  add     :    0.385  (  1.77%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.045  (  0.21%)
+  qbc_comm:    0.129  (  0.59%)
+     --> total exch_qbc:    0.173  (  0.80%)
+
+ Myid =    1   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.748  ( 99.99%)
+  rhsx    :    0.723  (  3.32%)
+  rhsy    :    1.080  (  4.96%)
+  rhsz    :    1.223  (  5.62%)
+  rhs     :    3.987  ( 18.33%)
+     --> total  sub-rhs:    3.026  ( 13.91%)
+     --> total rest-rhs:    0.960  (  4.42%)
+  jacld   :    2.508  ( 11.53%)
+  blts    :    5.536  ( 25.45%)
+  jacu    :    2.479  ( 11.40%)
+  buts    :    5.547  ( 25.50%)
+  add     :    0.423  (  1.94%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.045  (  0.20%)
+  qbc_comm:    0.521  (  2.40%)
+     --> total exch_qbc:    0.566  (  2.60%)
+
+ Myid =    2   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.750  (100.00%)
+  rhsx    :    0.761  (  3.50%)
+  rhsy    :    1.124  (  5.17%)
+  rhsz    :    1.244  (  5.72%)
+  rhs     :    4.128  ( 18.98%)
+     --> total  sub-rhs:    3.130  ( 14.39%)
+     --> total rest-rhs:    0.998  (  4.59%)
+  jacld   :    2.560  ( 11.77%)
+  blts    :    5.651  ( 25.98%)
+  jacu    :    2.498  ( 11.48%)
+  buts    :    5.677  ( 26.10%)
+  add     :    0.328  (  1.51%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.045  (  0.21%)
+  qbc_comm:    0.153  (  0.70%)
+     --> total exch_qbc:    0.198  (  0.91%)
+
+ Myid =    3   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.747  ( 99.98%)
+  rhsx    :    0.774  (  3.56%)
+  rhsy    :    1.107  (  5.09%)
+  rhsz    :    1.214  (  5.58%)
+  rhs     :    4.058  ( 18.66%)
+     --> total  sub-rhs:    3.095  ( 14.23%)
+     --> total rest-rhs:    0.963  (  4.43%)
+  jacld   :    2.494  ( 11.47%)
+  blts    :    5.539  ( 25.47%)
+  jacu    :    2.423  ( 11.14%)
+  buts    :    5.578  ( 25.64%)
+  add     :    0.266  (  1.22%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.045  (  0.21%)
+  qbc_comm:    0.643  (  2.95%)
+     --> total exch_qbc:    0.688  (  3.16%)
+
+ Myid =    4   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.750  (100.00%)
+  rhsx    :    0.754  (  3.47%)
+  rhsy    :    1.100  (  5.06%)
+  rhsz    :    1.255  (  5.77%)
+  rhs     :    4.007  ( 18.42%)
+     --> total  sub-rhs:    3.109  ( 14.30%)
+     --> total rest-rhs:    0.898  (  4.13%)
+  jacld   :    2.554  ( 11.74%)
+  blts    :    5.659  ( 26.02%)
+  jacu    :    2.502  ( 11.50%)
+  buts    :    5.671  ( 26.07%)
+  add     :    0.385  (  1.77%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.044  (  0.20%)
+  qbc_comm:    0.135  (  0.62%)
+     --> total exch_qbc:    0.179  (  0.82%)
+
+ Myid =    5   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.748  ( 99.99%)
+  rhsx    :    0.725  (  3.33%)
+  rhsy    :    1.084  (  4.99%)
+  rhsz    :    1.200  (  5.52%)
+  rhs     :    3.961  ( 18.21%)
+     --> total  sub-rhs:    3.009  ( 13.84%)
+     --> total rest-rhs:    0.952  (  4.37%)
+  jacld   :    2.514  ( 11.56%)
+  blts    :    5.543  ( 25.48%)
+  jacu    :    2.475  ( 11.38%)
+  buts    :    5.551  ( 25.52%)
+  add     :    0.421  (  1.93%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.044  (  0.20%)
+  qbc_comm:    0.541  (  2.49%)
+     --> total exch_qbc:    0.585  (  2.69%)
+
+ Myid =    6   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.751  (100.00%)
+  rhsx    :    0.737  (  3.39%)
+  rhsy    :    1.106  (  5.08%)
+  rhsz    :    1.241  (  5.70%)
+  rhs     :    4.040  ( 18.58%)
+     --> total  sub-rhs:    3.084  ( 14.18%)
+     --> total rest-rhs:    0.957  (  4.40%)
+  jacld   :    2.567  ( 11.80%)
+  blts    :    5.656  ( 26.00%)
+  jacu    :    2.522  ( 11.59%)
+  buts    :    5.679  ( 26.11%)
+  add     :    0.416  (  1.91%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.046  (  0.21%)
+  qbc_comm:    0.109  (  0.50%)
+     --> total exch_qbc:    0.155  (  0.71%)
+
+ Myid =    7   num_threads =   2
+  SECTION   Time (secs)
+  total   :   21.748  ( 99.99%)
+  rhsx    :    0.714  (  3.28%)
+  rhsy    :    1.067  (  4.90%)
+  rhsz    :    1.216  (  5.59%)
+  rhs     :    3.924  ( 18.04%)
+     --> total  sub-rhs:    2.997  ( 13.78%)
+     --> total rest-rhs:    0.927  (  4.26%)
+  jacld   :    2.512  ( 11.55%)
+  blts    :    5.541  ( 25.47%)
+  jacu    :    2.486  ( 11.43%)
+  buts    :    5.555  ( 25.54%)
+  add     :    0.464  (  2.13%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.045  (  0.21%)
+  qbc_comm:    0.517  (  2.38%)
+     --> total exch_qbc:    0.562  (  2.59%)
+
+real	0m22.422s
+user	5m50.112s
+sys	0m1.176s
++ mpirun -np 16 bin/lu-mz.B.16
+--------------------------------------------------------------------------
+[[64503,1],3]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Reading from input file inputlu-mz.data
+ Number of zones:   4 x   4
+ Iterations: 250    dt:   2.000000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     32  (  2.0 threads/process)
+
+ Calculated speedup =     32.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+[compute-641-2.local:01698] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-2.local:01698] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  250
+
+ Verification being performed for class B
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+ FAILURE:  1                   NaN 0.1734656959567E+05                 NaN
+ FAILURE:  2                   NaN 0.1238977748533E+04                 NaN
+ FAILURE:  3                   NaN 0.4123885357100E+04                 NaN
+ FAILURE:  4                   NaN 0.3613705834056E+04                 NaN
+ FAILURE:  5                   NaN 0.3531187871586E+05                 NaN
+ Comparison of RMS-norms of solution error
+ FAILURE:  1                   NaN 0.1781612313296E+04                 NaN
+ FAILURE:  2                   NaN 0.1177971120769E+03                 NaN
+ FAILURE:  3                   NaN 0.4233792871440E+03                 NaN
+ FAILURE:  4                   NaN 0.3577260438230E+03                 NaN
+ FAILURE:  5                   NaN 0.3659958544012E+04                 NaN
+ Comparison of surface integral
+ FAILURE:                      NaN 0.6107041476456E+04                 NaN
+ Verification failed
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      250
+ Time in seconds =                    20.66
+ Total processes =                       16
+ Total threads   =                       32
+ Mop/s total     =                 21729.79
+ Mop/s/thread    =                   679.06
+ Operation type  =           floating point
+ Verification    =             UNSUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+ Myid =    0   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.659  (100.00%)
+  rhsx    :    0.462  (  2.23%)
+  rhsy    :    0.751  (  3.64%)
+  rhsz    :    0.800  (  3.87%)
+  rhs     :    2.758  ( 13.35%)
+     --> total  sub-rhs:    2.013  (  9.74%)
+     --> total rest-rhs:    0.745  (  3.61%)
+  jacld   :    3.913  ( 18.94%)
+  blts    :    4.026  ( 19.49%)
+  jacu    :    3.548  ( 17.17%)
+  buts    :    5.021  ( 24.31%)
+  add     :    0.352  (  1.70%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.025  (  0.12%)
+  qbc_comm:    0.376  (  1.82%)
+     --> total exch_qbc:    0.401  (  1.94%)
+
+ Myid =    1   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.656  ( 99.99%)
+  rhsx    :    0.469  (  2.27%)
+  rhsy    :    0.732  (  3.54%)
+  rhsz    :    0.787  (  3.81%)
+  rhs     :    2.795  ( 13.53%)
+     --> total  sub-rhs:    1.988  (  9.62%)
+     --> total rest-rhs:    0.807  (  3.91%)
+  jacld   :    3.383  ( 16.38%)
+  blts    :    4.426  ( 21.43%)
+  jacu    :    3.491  ( 16.90%)
+  buts    :    4.882  ( 23.63%)
+  add     :    0.335  (  1.62%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.025  (  0.12%)
+  qbc_comm:    0.798  (  3.86%)
+     --> total exch_qbc:    0.823  (  3.98%)
+
+ Myid =    2   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.656  ( 99.98%)
+  rhsx    :    0.536  (  2.59%)
+  rhsy    :    0.852  (  4.12%)
+  rhsz    :    0.812  (  3.93%)
+  rhs     :    3.059  ( 14.81%)
+     --> total  sub-rhs:    2.200  ( 10.65%)
+     --> total rest-rhs:    0.859  (  4.16%)
+  jacld   :    3.778  ( 18.29%)
+  blts    :    3.930  ( 19.02%)
+  jacu    :    3.478  ( 16.83%)
+  buts    :    4.792  ( 23.20%)
+  add     :    0.347  (  1.68%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.030  (  0.14%)
+  qbc_comm:    0.561  (  2.72%)
+     --> total exch_qbc:    0.591  (  2.86%)
+
+ Myid =    3   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.654  ( 99.97%)
+  rhsx    :    0.553  (  2.68%)
+  rhsy    :    0.949  (  4.59%)
+  rhsz    :    0.801  (  3.87%)
+  rhs     :    3.165  ( 15.32%)
+     --> total  sub-rhs:    2.303  ( 11.15%)
+     --> total rest-rhs:    0.862  (  4.17%)
+  jacld   :    3.118  ( 15.09%)
+  blts    :    3.876  ( 18.76%)
+  jacu    :    3.506  ( 16.97%)
+  buts    :    4.733  ( 22.91%)
+  add     :    0.338  (  1.64%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.034  (  0.16%)
+  qbc_comm:    1.088  (  5.26%)
+     --> total exch_qbc:    1.121  (  5.43%)
+
+ Myid =    4   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.658  ( 99.99%)
+  rhsx    :    0.523  (  2.53%)
+  rhsy    :    0.811  (  3.93%)
+  rhsz    :    0.810  (  3.92%)
+  rhs     :    3.012  ( 14.58%)
+     --> total  sub-rhs:    2.144  ( 10.38%)
+     --> total rest-rhs:    0.868  (  4.20%)
+  jacld   :    3.841  ( 18.59%)
+  blts    :    3.972  ( 19.23%)
+  jacu    :    3.457  ( 16.73%)
+  buts    :    4.861  ( 23.53%)
+  add     :    0.343  (  1.66%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.029  (  0.14%)
+  qbc_comm:    0.523  (  2.53%)
+     --> total exch_qbc:    0.551  (  2.67%)
+
+ Myid =    5   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.657  ( 99.99%)
+  rhsx    :    0.480  (  2.32%)
+  rhsy    :    0.743  (  3.60%)
+  rhsz    :    0.776  (  3.76%)
+  rhs     :    2.760  ( 13.36%)
+     --> total  sub-rhs:    2.000  (  9.68%)
+     --> total rest-rhs:    0.760  (  3.68%)
+  jacld   :    3.452  ( 16.71%)
+  blts    :    4.530  ( 21.93%)
+  jacu    :    3.429  ( 16.60%)
+  buts    :    4.660  ( 22.56%)
+  add     :    0.317  (  1.54%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.026  (  0.13%)
+  qbc_comm:    0.824  (  3.99%)
+     --> total exch_qbc:    0.850  (  4.11%)
+
+ Myid =    6   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.658  ( 99.99%)
+  rhsx    :    0.524  (  2.54%)
+  rhsy    :    0.829  (  4.01%)
+  rhsz    :    0.801  (  3.88%)
+  rhs     :    3.023  ( 14.63%)
+     --> total  sub-rhs:    2.154  ( 10.43%)
+     --> total rest-rhs:    0.869  (  4.21%)
+  jacld   :    3.862  ( 18.69%)
+  blts    :    3.948  ( 19.11%)
+  jacu    :    3.479  ( 16.84%)
+  buts    :    4.787  ( 23.17%)
+  add     :    0.346  (  1.68%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.029  (  0.14%)
+  qbc_comm:    0.561  (  2.72%)
+     --> total exch_qbc:    0.590  (  2.85%)
+
+ Myid =    7   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.656  ( 99.98%)
+  rhsx    :    0.491  (  2.38%)
+  rhsy    :    0.747  (  3.61%)
+  rhsz    :    0.781  (  3.78%)
+  rhs     :    2.803  ( 13.57%)
+     --> total  sub-rhs:    2.019  (  9.77%)
+     --> total rest-rhs:    0.783  (  3.79%)
+  jacld   :    3.417  ( 16.54%)
+  blts    :    4.468  ( 21.63%)
+  jacu    :    3.420  ( 16.55%)
+  buts    :    4.725  ( 22.87%)
+  add     :    0.315  (  1.52%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.027  (  0.13%)
+  qbc_comm:    0.850  (  4.11%)
+     --> total exch_qbc:    0.877  (  4.24%)
+
+ Myid =    8   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.658  ( 99.99%)
+  rhsx    :    0.553  (  2.68%)
+  rhsy    :    0.862  (  4.17%)
+  rhsz    :    0.814  (  3.94%)
+  rhs     :    3.129  ( 15.14%)
+     --> total  sub-rhs:    2.230  ( 10.80%)
+     --> total rest-rhs:    0.898  (  4.35%)
+  jacld   :    3.920  ( 18.97%)
+  blts    :    3.925  ( 19.00%)
+  jacu    :    3.421  ( 16.56%)
+  buts    :    4.667  ( 22.59%)
+  add     :    0.338  (  1.63%)
+  l2norm  :    0.001  (  0.00%)
+  qbc_copy:    0.031  (  0.15%)
+  qbc_comm:    0.599  (  2.90%)
+     --> total exch_qbc:    0.630  (  3.05%)
+
+ Myid =    9   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.657  ( 99.99%)
+  rhsx    :    0.438  (  2.12%)
+  rhsy    :    0.712  (  3.45%)
+  rhsz    :    0.775  (  3.75%)
+  rhs     :    2.650  ( 12.83%)
+     --> total  sub-rhs:    1.925  (  9.32%)
+     --> total rest-rhs:    0.725  (  3.51%)
+  jacld   :    3.537  ( 17.12%)
+  blts    :    4.576  ( 22.15%)
+  jacu    :    3.407  ( 16.49%)
+  buts    :    4.824  ( 23.35%)
+  add     :    0.354  (  1.71%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.025  (  0.12%)
+  qbc_comm:    0.751  (  3.64%)
+     --> total exch_qbc:    0.776  (  3.76%)
+
+ Myid =   10   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.659  (100.00%)
+  rhsx    :    0.394  (  1.91%)
+  rhsy    :    0.692  (  3.35%)
+  rhsz    :    0.741  (  3.58%)
+  rhs     :    2.199  ( 10.65%)
+     --> total  sub-rhs:    1.827  (  8.84%)
+     --> total rest-rhs:    0.373  (  1.80%)
+  jacld   :    3.718  ( 18.00%)
+  blts    :    4.507  ( 21.82%)
+  jacu    :    3.846  ( 18.62%)
+  buts    :    5.424  ( 26.25%)
+  add     :    0.230  (  1.11%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.020  (  0.10%)
+  qbc_comm:    0.084  (  0.41%)
+     --> total exch_qbc:    0.104  (  0.50%)
+
+ Myid =   11   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.656  ( 99.99%)
+  rhsx    :    0.465  (  2.25%)
+  rhsy    :    0.732  (  3.54%)
+  rhsz    :    0.788  (  3.81%)
+  rhs     :    2.789  ( 13.50%)
+     --> total  sub-rhs:    1.984  (  9.61%)
+     --> total rest-rhs:    0.805  (  3.90%)
+  jacld   :    3.436  ( 16.63%)
+  blts    :    4.294  ( 20.78%)
+  jacu    :    3.486  ( 16.87%)
+  buts    :    4.900  ( 23.72%)
+  add     :    0.340  (  1.65%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.026  (  0.12%)
+  qbc_comm:    0.790  (  3.82%)
+     --> total exch_qbc:    0.815  (  3.95%)
+
+ Myid =   12   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.657  ( 99.99%)
+  rhsx    :    0.529  (  2.56%)
+  rhsy    :    0.832  (  4.03%)
+  rhsz    :    0.801  (  3.88%)
+  rhs     :    3.046  ( 14.75%)
+     --> total  sub-rhs:    2.162  ( 10.47%)
+     --> total rest-rhs:    0.884  (  4.28%)
+  jacld   :    3.994  ( 19.33%)
+  blts    :    3.933  ( 19.04%)
+  jacu    :    3.401  ( 16.46%)
+  buts    :    4.697  ( 22.74%)
+  add     :    0.349  (  1.69%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.030  (  0.15%)
+  qbc_comm:    0.573  (  2.77%)
+     --> total exch_qbc:    0.604  (  2.92%)
+
+ Myid =   13   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.654  ( 99.98%)
+  rhsx    :    0.613  (  2.97%)
+  rhsy    :    1.095  (  5.30%)
+  rhsz    :    0.811  (  3.92%)
+  rhs     :    3.328  ( 16.11%)
+     --> total  sub-rhs:    2.518  ( 12.19%)
+     --> total rest-rhs:    0.810  (  3.92%)
+  jacld   :    3.269  ( 15.82%)
+  blts    :    4.383  ( 21.22%)
+  jacu    :    3.194  ( 15.46%)
+  buts    :    4.350  ( 21.05%)
+  add     :    0.359  (  1.74%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.038  (  0.18%)
+  qbc_comm:    1.173  (  5.68%)
+     --> total exch_qbc:    1.211  (  5.86%)
+
+ Myid =   14   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.657  ( 99.99%)
+  rhsx    :    0.500  (  2.42%)
+  rhsy    :    0.797  (  3.86%)
+  rhsz    :    0.798  (  3.86%)
+  rhs     :    2.917  ( 14.12%)
+     --> total  sub-rhs:    2.095  ( 10.14%)
+     --> total rest-rhs:    0.822  (  3.98%)
+  jacld   :    3.806  ( 18.42%)
+  blts    :    3.982  ( 19.27%)
+  jacu    :    3.478  ( 16.84%)
+  buts    :    4.976  ( 24.08%)
+  add     :    0.349  (  1.69%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.027  (  0.13%)
+  qbc_comm:    0.505  (  2.44%)
+     --> total exch_qbc:    0.532  (  2.58%)
+
+ Myid =   15   num_threads =   2
+  SECTION   Time (secs)
+  total   :   20.657  ( 99.99%)
+  rhsx    :    0.472  (  2.28%)
+  rhsy    :    0.736  (  3.56%)
+  rhsz    :    0.789  (  3.82%)
+  rhs     :    2.797  ( 13.54%)
+     --> total  sub-rhs:    1.996  (  9.66%)
+     --> total rest-rhs:    0.801  (  3.88%)
+  jacld   :    3.505  ( 16.96%)
+  blts    :    4.440  ( 21.49%)
+  jacu    :    3.362  ( 16.27%)
+  buts    :    4.788  ( 23.18%)
+  add     :    0.319  (  1.54%)
+  l2norm  :    0.000  (  0.00%)
+  qbc_copy:    0.026  (  0.13%)
+  qbc_comm:    0.793  (  3.84%)
+     --> total exch_qbc:    0.819  (  3.96%)
+
+real	0m21.366s
+user	11m0.603s
+sys	0m2.421s

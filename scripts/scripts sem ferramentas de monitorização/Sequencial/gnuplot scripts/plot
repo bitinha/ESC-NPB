@@ -1,0 +1,18 @@
+set xtics ("W" 0.375, "A" 2.375, "B" 4.375, "C" 6.375,)
+set xlabel "Class"
+set ylabel "Execution Time (seconds)"
+set key top left
+set boxwidth 0.25
+set style fill solid
+set logscale y
+set title "Comparison of execution times of different optimization \n flags for sequential bt-mz benchmark on node 662 with gnu compiler"
+
+filename = "bt.dat"
+
+plot filename using ($1*2+$2*0.25):(stringcolumn(4) eq "-O0"? $3:1/0) title "o0" with boxes ls 1,\
+     filename using ($1*2+$2*0.25):(stringcolumn(4) eq "-O1"? $3:1/0) title "o1" with boxes ls 2,\
+     filename using ($1*2+$2*0.25):(stringcolumn(4) eq "-O2"? $3:1/0) title "o2" with boxes ls 3,\
+     filename using ($1*2+$2*0.25):(stringcolumn(4) eq "-O3"? $3:1/0) title "o3" with boxes ls 4 
+
+
+pause -1 "Hit any key to continue"

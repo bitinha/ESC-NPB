@@ -1,0 +1,17 @@
+set xtics ("W" 0.375, "A" 2.375, "B" 4.375, "C" 6.375,)
+set xlabel "Class"
+set ylabel "CPU Utilization"
+set key top left
+set boxwidth 0.25
+set style fill solid
+
+
+filename = "recolhe_seq.py run_lu.sh pidstat.dat"
+
+plot filename using ($1*2+$2*0.25):(stringcolumn(2) eq "0"? $5:1/0) title "o0" with boxes ls 1,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "1"? $5:1/0) title "o1" with boxes ls 2,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "2"? $5:1/0) title "o2" with boxes ls 3,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "3"? $5:1/0) title "o3" with boxes ls 4 
+
+
+pause -1 "Hit any key to continue"

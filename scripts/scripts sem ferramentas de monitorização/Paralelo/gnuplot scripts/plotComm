@@ -1,0 +1,14 @@
+
+set logscale xy 2
+set key top left
+filename = "speedup.dat"
+filename_lu = "speedup_lu.dat"
+filename_sp = "speedup_sp.dat"
+set xlabel "Number of processes"
+set ylabel "Fraction of execution time spent on communication"
+
+plot filename using 10:($8/$4) with linespoints linewidth 2 pointtype 7 pointsize 1.5 title "bt-mz", \
+	 filename_lu using 10:($8/$4) with linespoints linewidth 2 pointtype 7 pointsize 1.5 title "lu-mz", \
+	 filename_sp using 10:($8/$4) with linespoints linewidth 2 pointtype 7 pointsize 1.5  title "sp-mz"
+
+pause -1 "Hit any key to continue"

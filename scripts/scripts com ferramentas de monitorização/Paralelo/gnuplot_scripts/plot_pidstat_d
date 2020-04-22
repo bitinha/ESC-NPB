@@ -1,0 +1,16 @@
+set xtics ("W" 0.375, "A" 2.375, "B" 4.375, "C" 6.375,)
+set xlabel "Class"
+set ylabel "kB_rd"
+set key top right
+set boxwidth 0.25
+set style fill solid
+filename = "recolhe_para.py run_f77_641_64_mx.sh pidstat_d all.dat"
+
+
+plot filename using ($1*2+$2*0.25):(stringcolumn(2) eq "0"? $4:1/0) title "o0" with boxes ls 1,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "1"? $4:1/0) title "o1" with boxes ls 2,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "2"? $4:1/0) title "o2" with boxes ls 3,\
+     filename using ($1*2+$2*0.25):(stringcolumn(2) eq "3"? $4:1/0) title "o3" with boxes ls 4 
+
+
+pause -1 "Hit any key to continue"

@@ -1,0 +1,96 @@
+#!/usr/bin/env python3.8
+
+import re
+import fileinput
+
+def findMaxTime(lista):
+	ret = 0,0
+	minimo = float("inf")
+	for e,i in enumerate(lista):
+		if e < minimo:
+			minimo = e
+			ret = e, i
+
+	return ret
+
+
+
+resultados = dict()
+state=""
+for line in fileinput.input():
+	
+	if state == "bin":
+		if match := re.search(r'\s*Class\s*=\s*(.*)',line):
+			Class = match.group(1)
+		elif match := re.search(r'\s*Time in seconds\s*=\s*(.*)',line):
+			time = float(match.group(1))
+		elif match := re.search(r'\s*Mop/s total\s*=\s*(.*)',line):
+			mops = float(match.group(1))
+		elif match := re.search(r'\s*F77\s*=\s*(.*)',line):
+			f77 = match.group(1)
+		elif match := re.search(r'\s*FFLAGS\s*=\s*(.*)',line):
+			fflags = match.group(1)
+		elif re.match(r'sys',line):
+			d = {"Class":Class,"Time":time,"MOPS":mops,"F77":f77,"FFlags":fflags}
+			l = resultados.get(Class+f77+fflags,list())
+			l.append(d)
+			resultados[Class+f77+fflags]=l
+			state = ""
+
+	elif re.match(r'\+ bin',line):
+		state = "bin"
+
+
+
+for lista in resultados.values():
+	minimos = list()
+
+	for e in lista:
+		if len(minimos) < 5:
+			minimos.append(e)
+		else:
+			time, i = findMaxTime(minimos)
+			if time > e["Time"]:
+				minimos[i] = e
+
+
+	Class = minimos[0]["Class"]
+	time = 0
+	mops = 0
+	f77 = minimos[0]["F77"]
+	fflags = minimos[0]["FFlags"]
+
+	for e in minimos:
+		time += e["Time"]
+		mops += e["MOPS"]
+
+	mops = round(mops / len(minimos),3)
+	time = round(time / len(minimos),3)
+
+	x=0;y=0
+	if Class == "W":
+		x = 0
+	elif Class == "A":
+		x = 1
+	elif Class == "B":
+		x = 2
+	elif Class == "C":
+		x = 3
+
+	if fflags == "-O0":
+		y = 0
+	elif fflags == "-O1":
+		y = 1
+	elif fflags == "-O2":
+		y = 2
+	elif fflags == "-O3":
+		y = 3
+
+
+	print(str(x)+ " " + str(y)+ " " + str(time) + " " + fflags + " " + Class + " " + f77)
+
+
+
+
+
+	#print("Class: "+Class+"; Time: "+str(time)+"; MOP/S: "+str(mops)+"; F77: "+f77+"; FFlags: "+fflags)

@@ -1,0 +1,672 @@
++ export OMP_NUM_THREADS=2
++ OMP_NUM_THREADS=2
++ cp config/makeo3.def config/make.def
++ make sp-mz CLASS=B NPROCS=1
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd SP-MZ; make CLASS=B NPROCS=1
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+cc  -o setparams setparams.c -lm
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams sp-mz 1 B
+mpif77 -c  -O3 -fopenmp sp.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp ninvr.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp pinvr.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp tzetar.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp txinvr.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+cd ../common; mpif77 -c  -O3 -fopenmp print_results.f
+cd ../common; mpif77 -c  -O3 -fopenmp timers.f
+mpif77 -O3 -fopenmp -o ../bin/sp-mz.B.1 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
++ make sp-mz CLASS=B NPROCS=2
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd SP-MZ; make CLASS=B NPROCS=2
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams sp-mz 2 B
+mpif77 -c  -O3 -fopenmp sp.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp ninvr.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp pinvr.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp tzetar.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp txinvr.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -O3 -fopenmp -o ../bin/sp-mz.B.2 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
++ make sp-mz CLASS=B NPROCS=4
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd SP-MZ; make CLASS=B NPROCS=4
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams sp-mz 4 B
+mpif77 -c  -O3 -fopenmp sp.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp ninvr.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp pinvr.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp tzetar.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp txinvr.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -O3 -fopenmp -o ../bin/sp-mz.B.4 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
++ make sp-mz CLASS=B NPROCS=8
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd SP-MZ; make CLASS=B NPROCS=8
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams sp-mz 8 B
+mpif77 -c  -O3 -fopenmp sp.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp ninvr.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp pinvr.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp tzetar.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp txinvr.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -O3 -fopenmp -o ../bin/sp-mz.B.8 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
++ make sp-mz CLASS=B NPROCS=16
+   ===========================================
+   =      NAS PARALLEL BENCHMARKS 3.3        =
+   =      MPI+OpenMP Multi-Zone Versions     =
+   =      F77                                =
+   ===========================================
+
+cd SP-MZ; make CLASS=B NPROCS=16
+make[1]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
+make[2]: Entering directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/sys'
+../sys/setparams sp-mz 16 B
+mpif77 -c  -O3 -fopenmp sp.f
+mpif77 -c  -O3 -fopenmp initialize.f
+mpif77 -c  -O3 -fopenmp exact_solution.f
+mpif77 -c  -O3 -fopenmp exact_rhs.f
+mpif77 -c  -O3 -fopenmp set_constants.f
+mpif77 -c  -O3 -fopenmp adi.f
+mpif77 -c  -O3 -fopenmp rhs.f
+mpif77 -c  -O3 -fopenmp zone_setup.f
+mpif77 -c  -O3 -fopenmp x_solve.f
+mpif77 -c  -O3 -fopenmp ninvr.f
+mpif77 -c  -O3 -fopenmp y_solve.f
+mpif77 -c  -O3 -fopenmp pinvr.f
+mpif77 -c  -O3 -fopenmp exch_qbc.f
+mpif77 -c  -O3 -fopenmp z_solve.f
+mpif77 -c  -O3 -fopenmp tzetar.f
+mpif77 -c  -O3 -fopenmp add.f
+mpif77 -c  -O3 -fopenmp txinvr.f
+mpif77 -c  -O3 -fopenmp error.f
+mpif77 -c  -O3 -fopenmp verify.f
+mpif77 -c  -O3 -fopenmp mpi_setup.f
+mpif77 -O3 -fopenmp -o ../bin/sp-mz.B.16 sp.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o zone_setup.o x_solve.o ninvr.o y_solve.o pinvr.o exch_qbc.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o mpi_setup.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory `/home/a75362/ESC/TP1/NPB3.3-MZ-MPI/SP-MZ'
++ echo O3
+O3
++ echo '------------Class B------------'
+------------Class B------------
++ mpirun -np 1 bin/sp-mz.B.1
+--------------------------------------------------------------------------
+[[13306,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-14
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     1
+
+ Use the default load factors with threads
+ Total number of threads:      2  (  2.0 threads/process)
+
+ Calculated speedup =      2.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7324427834846E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9750028141433E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2669609722399E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1257853850320E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.6963580707162E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3379016525524E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3324512224613E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2354845652320E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1807882061705E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                   111.51
+ Total processes =                        1
+ Total threads   =                        2
+ Mop/s total     =                  2720.47
+ Mop/s/thread    =                  1360.24
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	1m53.020s
+user	3m44.121s
+sys	0m0.471s
++ mpirun -np 2 bin/sp-mz.B.2
+--------------------------------------------------------------------------
+[[13299,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-14
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     2
+
+ Use the default load factors with threads
+ Total number of threads:      4  (  2.0 threads/process)
+
+ Calculated speedup =      4.00
+
+ Time step    1
+ Time step   20
+[compute-641-14.local:17054] 1 more process has sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-14.local:17054] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7341950389475E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9672276720848E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1312540998577E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2666206055095E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1246019203879E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3464561247689E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3328520075396E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2356140234866E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1798860694131E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    45.82
+ Total processes =                        2
+ Total threads   =                        4
+ Mop/s total     =                  6620.87
+ Mop/s/thread    =                  1655.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m46.773s
+user	3m4.521s
+sys	0m0.559s
++ mpirun -np 4 bin/sp-mz.B.4
+--------------------------------------------------------------------------
+[[13253,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-14
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     4
+
+ Use the default load factors with threads
+ Total number of threads:      8  (  2.0 threads/process)
+
+ Calculated speedup =      8.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+[compute-641-14.local:17064] 3 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-14.local:17064] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7394518053361E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9703377289082E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1310738057645E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2659398720486E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1247709867656E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3393273979218E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3334531851571E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2358729399959E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1800664967646E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    23.37
+ Total processes =                        4
+ Total threads   =                        8
+ Mop/s total     =                 12982.23
+ Mop/s/thread    =                  1622.78
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m24.063s
+user	3m8.410s
+sys	0m0.784s
++ mpirun -np 8 bin/sp-mz.B.8
+--------------------------------------------------------------------------
+[[13270,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-14
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:     8
+
+ Use the default load factors with threads
+ Total number of threads:     16  (  2.0 threads/process)
+
+ Calculated speedup =     16.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+[compute-641-14.local:17083] 7 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-14.local:17083] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9672276720848E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2662802387791E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1251091195211E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3407531432912E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3334531851571E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2362613147599E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1802469241160E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                    13.31
+ Total processes =                        8
+ Total threads   =                       16
+ Mop/s total     =                 22798.33
+ Mop/s/thread    =                  1424.90
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m13.887s
+user	3m34.564s
+sys	0m1.287s
++ mpirun -np 16 bin/sp-mz.B.16
+--------------------------------------------------------------------------
+[[13232,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-641-14
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - SP-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   8 x   8
+ Iterations:      400    dt:   0.001000
+ Number of active processes:    16
+
+ Use the default load factors with threads
+ Total number of threads:     32  (  2.0 threads/process)
+
+ Calculated speedup =     32.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Time step  220
+[compute-641-14.local:17117] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[compute-641-14.local:17117] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ Time step  240
+ Time step  260
+ Time step  280
+ Time step  300
+ Time step  320
+ Time step  340
+ Time step  360
+ Time step  380
+ Time step  400
+ Verification being performed for class B
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5190422977921E+04 0.5190422977921E+04 0.7429563162619E-13
+           2 0.3655458539065E+03 0.3655458539065E+03 0.9687827004965E-13
+           3 0.1261126592633E+04 0.1261126592633E+04 0.1308935116713E-12
+           4 0.1002038338842E+04 0.1002038338842E+04 0.2661667832023E-12
+           5 0.1075902511165E+05 0.1075902511165E+05 0.1251091195211E-12
+ Comparison of RMS-norms of solution error
+           1 0.5469182054223E+03 0.5469182054223E+03 0.7005154323324E-13
+           2 0.4983658028989E+02 0.4983658028989E+02 0.3421788886607E-13
+           3 0.1418301776602E+03 0.1418301776602E+03 0.3332527926180E-12
+           4 0.1097717156175E+03 0.1097717156175E+03 0.2362613147599E-12
+           5 0.1260195162174E+04 0.1260195162174E+04 0.1802469241160E-12
+ Verification Successful
+
+
+ SP-MZ Benchmark Completed.
+ Class           =                        B
+ Size            =            304x  208x 17
+ Iterations      =                      400
+ Time in seconds =                     8.07
+ Total processes =                       16
+ Total threads   =                       32
+ Mop/s total     =                 37591.84
+ Mop/s/thread    =                  1174.75
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              20 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = -O3 -fopenmp
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m8.651s
+user	4m20.552s
+sys	0m2.725s
